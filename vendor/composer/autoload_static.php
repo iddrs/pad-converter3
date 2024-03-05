@@ -14,10 +14,6 @@ class ComposerStaticInit1ca780e73208dd94bb11c29277e8a2ca
     );
 
     public static $prefixLengthsPsr4 = array (
-        'O' => 
-        array (
-            'OpenSpout\\' => 10,
-        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -25,10 +21,6 @@ class ComposerStaticInit1ca780e73208dd94bb11c29277e8a2ca
     );
 
     public static $prefixDirsPsr4 = array (
-        'OpenSpout\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/openspout/openspout/src',
-        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

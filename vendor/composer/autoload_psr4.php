@@ -6,6 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'OpenSpout\\' => array($vendorDir . '/openspout/openspout/src'),
     'App\\' => array($baseDir . '/src'),
 );
