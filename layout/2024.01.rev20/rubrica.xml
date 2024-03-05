@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="rubrica">
+    <columns>
+        <col origin="source" id="exercicio" len="4" start="1" type="int" transformer=""></col>
+        <col origin="source" id="rubrica" len="15" start="5" type="string" transformer=""></col>
+        <col origin="source" id="especificacao_rubrica" len="110" start="20" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_nivel_rubrica" len="1" start="130" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="nivel_rubrica" len="2" start="131" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

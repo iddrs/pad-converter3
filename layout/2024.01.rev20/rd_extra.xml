@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="rd_extra">
+    <columns>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="zeros_from_left_to_right"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="valor_movimentacao" len="13" start="25" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="identificador_movimento" len="1" start="38" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="classificacao" len="2" start="39" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

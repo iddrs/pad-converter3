@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="cta_oper">
+    <columns>
+        <col origin="source" id="codigo_operacao" len="30" start="1" type="string" transformer="trim"></col>
+        <col origin="source" id="data_operacao" len="8" start="31" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_operacao" len="14" start="39" type="currency" transformer="currency_post_signal_fmt"></col>
+        <col origin="source" id="codigo_receita" len="20" start="57" type="string" transformer=""></col>
+        <col origin="source" id="orgao_receita" len="2" start="77" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam_receita" len="2" start="79" type="int" transformer=""></col>
+        <col origin="source" id="conta_contabil" len="20" start="81" type="string" transformer="zeros_from_left_to_right"></col>
+        <col origin="source" id="orgao_conta_contabil" len="2" start="101" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam_conta_contabil" len="2" start="103" type="int" transformer=""></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="109" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="110" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="113" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+
