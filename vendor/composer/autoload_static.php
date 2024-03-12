@@ -14,6 +14,10 @@ class ComposerStaticInit1ca780e73208dd94bb11c29277e8a2ca
     );
 
     public static $prefixLengthsPsr4 = array (
+        'N' => 
+        array (
+            'NickBeen\\ProgressBar\\' => 21,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +25,10 @@ class ComposerStaticInit1ca780e73208dd94bb11c29277e8a2ca
     );
 
     public static $prefixDirsPsr4 = array (
+        'NickBeen\\ProgressBar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nickbeen/php-cli-progress-bar/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

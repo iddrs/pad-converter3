@@ -34,17 +34,15 @@ class Converter {
             $writer = $this->outputRepo->getWriterFor($layoutName);
             
             foreach ($sources as $source){
-                $contador = 0;
                 printf("\tProcessando arquivo %s...".PHP_EOL, $source->filename);
+                $progressBar = new \NickBeen\ProgressBar\ProgressBar(maxProgress: $source->totalRows);
+                $progressBar->start();
                 while(($buffer = $source->getRow())){
                     $row = $this->parse($source, $buffer, $colspec);
                     $writer->write($row);
-                    $contador++;
-                    if(($source->totalRows > 1000) & ($contador % 1000 === 0)) {
-                        printf("\t\t-> processados %d de %d ...".PHP_EOL, $contador, $source->totalRows);
-                    }
+                    $progressBar->tick();
                 }
-                printf("\t\tProcessados %d de %d registros.".PHP_EOL, $contador, $source->totalRows);
+                $progressBar->finish();
             }
             
             printf("\tSalvando dados de %s ...".PHP_EOL, $layoutName);

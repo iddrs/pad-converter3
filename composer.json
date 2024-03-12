@@ -17,5 +17,8 @@
             "lib/util.php",
             "mount_rp.php"
         ]
+    },
+    "require": {
+        "nickbeen/php-cli-progress-bar": "^1.1"
     }
 }

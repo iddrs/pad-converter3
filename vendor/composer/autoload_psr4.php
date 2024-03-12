@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'NickBeen\\ProgressBar\\' => array($vendorDir . '/nickbeen/php-cli-progress-bar/src'),
     'App\\' => array($baseDir . '/src'),
 );
