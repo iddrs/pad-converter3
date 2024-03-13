@@ -2,7 +2,7 @@
 <layout name="rubrica">
     <columns>
         <col origin="source" id="exercicio" len="4" start="1" type="int" transformer=""></col>
-        <col origin="source" id="rubrica" len="15" start="5" type="string" transformer=""></col>
+        <col origin="source" id="rubrica" len="15" start="5" type="string" transformer="ndo_fmt"></col>
         <col origin="source" id="especificacao_rubrica" len="110" start="20" type="string" transformer="trim"></col>
         <col origin="source" id="tipo_nivel_rubrica" len="1" start="130" type="char" transformer="strtoupper"></col>
         <col origin="source" id="nivel_rubrica" len="2" start="131" type="int" transformer=""></col>

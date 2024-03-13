@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout name="bal_desp">
     <columns>
-        <col origin="source" id="orgao" len="2" start="1" type="int" transformer=""></col>
+        <col origin="source" id="orgao" len="2" start="1" type="int" transformer="ndo_fmt"></col>
         <col origin="source" id="uniorcam" len="2" start="3" type="int" transformer=""></col>
         <col origin="source" id="funcao" len="2" start="5" type="int" transformer=""></col>
         <col origin="source" id="subfuncao" len="3" start="7" type="int" transformer=""></col>

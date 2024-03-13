@@ -7,7 +7,7 @@
         <col origin="source" id="subfuncao" len="3" start="7" type="int" transformer=""></col>
         <col origin="source" id="programa" len="4" start="10" type="int" transformer=""></col>
         <col origin="source" id="projativ" len="5" start="17" type="int" transformer=""></col>
-        <col origin="source" id="rubrica" len="15" start="22" type="string" transformer=""></col>
+        <col origin="source" id="rubrica" len="15" start="22" type="string" transformer="ndo_fmt"></col>
         <col origin="source" id="recurso_vinculado" len="4" start="37" type="int" transformer=""></col>
         <col origin="source" id="contrapartida_recurso_vinculado" len="4" start="41" type="int" transformer=""></col>
         <col origin="source" id="chave_empenho" len="13" start="45" type="string" transformer=""></col>

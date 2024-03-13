@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout name="bal_ver">
     <columns>
-        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="zeros_from_left_to_right"></col>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="cc_fmt"></col>
         <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
         <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
         <col origin="source" id="saldo_inicial_devedor" len="13" start="25" type="currency" transformer="currency_fmt"></col>

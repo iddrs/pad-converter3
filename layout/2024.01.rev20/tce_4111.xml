@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout name="tce_4111">
     <columns>
-        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer=""></col>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="cc_fmt"></col>
         <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
         <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
         <col origin="source" id="nr_lancamento" len="12" start="29" type="int" transformer=""></col>

@@ -9,10 +9,10 @@
         <col origin="source" id="data_pagamento" len="8" start="34" type="date" transformer="date_fmt"></col>
         <col origin="source" id="valor_pagamento" len="14" start="42" type="currency" transformer="currency_post_signal_fmt"></col>
         <col origin="source" id="codigo_operacao" len="30" start="176" type="string" transformer="trim"></col>
-        <col origin="source" id="conta_contabil_debito" len="20" start="206" type="string" transformer="zeros_from_left_to_right"></col>
+        <col origin="source" id="conta_contabil_debito" len="20" start="206" type="string" transformer="cc_fmt"></col>
         <col origin="source" id="orgao_debito" len="2" start="226" type="int" transformer=""></col>
         <col origin="source" id="uniorcam_debito" len="2" start="228" type="int" transformer=""></col>
-        <col origin="source" id="conta_contabil_credito" len="20" start="230" type="string" transformer="zeros_from_left_to_right"></col>
+        <col origin="source" id="conta_contabil_credito" len="20" start="230" type="string" transformer="cc_fmt"></col>
         <col origin="source" id="orgao_credito" len="2" start="250" type="int" transformer=""></col>
         <col origin="source" id="uniorcam_credito" len="2" start="252" type="int" transformer=""></col>
         <col origin="source" id="historico_pagamento" len="400" start="254" type="string" transformer="trim"></col>

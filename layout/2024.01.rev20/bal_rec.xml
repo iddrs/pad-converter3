@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout name="bal_rec">
     <columns>
-        <col origin="source" id="codigo_receita" len="20" start="1" type="string" transformer=""></col>
+        <col origin="source" id="codigo_receita" len="20" start="1" type="string" transformer="nro_fmt"></col>
         <col origin="calc" id="natureza_receita" type="string" fn="natureza_receita"></col>
         <col origin="calc" id="categoria_receita" type="string" fn="categoria_receita"></col>
         <col origin="calc" id="tipo_receita" type="int" fn="tipo_receita"></col>

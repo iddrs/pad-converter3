@@ -34,3 +34,21 @@ function zeros_from_left_to_right(string $val): string {
     $val = str_pad($nao_zeros, $tamanho_original, '0', STR_PAD_RIGHT);
     return (string) $val;
 }
+
+function ndo_fmt(string $val): string {
+    $val = zeros_from_left_to_right($val);
+    $val = substr($val, 0, 15);
+    return $val;
+}
+
+function nro_fmt(string $val): string {
+    $val = zeros_from_left_to_right($val);
+    $val = substr($val, 0, 15);
+    return $val;
+}
+
+function cc_fmt(string $val): string {
+    $val = zeros_from_left_to_right($val);
+    $val = substr($val, 0, 15);
+    return $val;
+}

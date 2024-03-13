@@ -71,13 +71,13 @@ function remessa(array $row): int {
 function natureza_receita(array $row): string {
     switch($row['codigo_receita'][0]){
         case 9:
-            return substr($row['codigo_receita'], 1).'0';
+            return nro_fmt(substr($row['codigo_receita'], 1).'0');
         case 7:
-            return '1'.substr($row['codigo_receita'], 1);
+            return nro_fmt('1'.substr($row['codigo_receita'], 1));
         case 8:
-            return '2'.substr($row['codigo_receita'], 1);
+            return nro_fmt('2'.substr($row['codigo_receita'], 1));
         default:
-            return (string) $row['codigo_receita'];
+            return (string) nro_fmt($row['codigo_receita']);
     }
 }
 

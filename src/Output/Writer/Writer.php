@@ -28,7 +28,7 @@ class Writer {
         }
     }
     
-    public function write(array $row): bool {;
+    public function write(array $row): bool {
         if(!pg_insert($this->con, $this->tableName, $row)){
             $error = pg_last_error($this->con);
             var_dump($row);
