@@ -41,6 +41,12 @@ function ndo_fmt(string $val): string {
     return $val;
 }
 
+function elemento_fmt(string $val): string {
+    $val = zeros_from_left_to_right($val);
+    $val = substr($val, 0, 6);
+    return $val;
+}
+
 function nro_fmt(string $val): string {
     $val = zeros_from_left_to_right($val);
     $val = substr($val, 0, 15);
