@@ -182,27 +182,27 @@ function dotacao_atualizada(array $row): float {
 }
 
 function dotacao_disponivel(array $row): float {
-    return (float) round(($row['dotacao_atualizada'] * $row['valor_limitado'] + $row['valor_recomposto']), 2);
+    return (float) round(($row['dotacao_atualizada'] - $row['valor_limitado'] + $row['valor_recomposto']), 2);
 }
 
 function saldo_a_empenhar(array $row): float {
-    return (float) round(($row['dotacao_atualizada'] + $row['valor_empenhado']), 2);
+    return (float) round(($row['dotacao_atualizada'] - $row['valor_empenhado']), 2);
 }
 
 function saldo_disponivel(array $row): float {
-    return (float) round(($row['dotacao_disponivel'] + $row['valor_empenhado']), 2);
+    return (float) round(($row['dotacao_disponivel'] - $row['valor_empenhado']), 2);
 }
 
 function empenhado_a_liquidar(array $row): float {
-    return (float) round(($row['valor_empenhado'] + $row['valor_liquidado']), 2);
+    return (float) round(($row['valor_empenhado'] - $row['valor_liquidado']), 2);
 }
 
 function liquidado_a_pagar(array $row): float {
-    return (float) round(($row['valor_liquidado'] + $row['valor_pago']), 2);
+    return (float) round(($row['valor_liquidado'] - $row['valor_pago']), 2);
 }
 
 function empenhado_a_pagar(array $row): float {
-    return (float) round(($row['valor_empenhado'] + $row['valor_pago']), 2);
+    return (float) round(($row['valor_empenhado'] - $row['valor_pago']), 2);
 }
 
 function saldo_inicial(array $row): float {
