@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="uniorcam">
+    <columns>
+        <col origin="source" id="exercicio" len="4" start="1" type="int" transformer=""></col>
+        <col origin="source" id="orgao" len="2" start="5" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="7" type="int" transformer=""></col>
+        <col origin="source" id="nome_uniorcam" len="80" start="9" type="string" transformer="trim"></col>
+        <col origin="source" id="identificador" len="2" start="89" type="int" transformer=""></col>
+        <col origin="source" id="cnpj_uniorcam" len="14" start="91" type="string" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

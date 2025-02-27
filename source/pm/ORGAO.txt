@@ -1,0 +1,260 @@
+87612826000190010120253101202501022025PREFEITURA MUNICIPAL INDEPENDENCIA                                              
+200202GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200203SECRETARIA DE ADMINISTRACAO                                                     
+200204SECRETARIA DA FAZENDA                                                           
+200205SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200206SECRETARIA DE OBRAS E VIACAO                                                    
+200207SECRETARIA DE SERVICOS URBANOS                                                  
+200208SECRETARIA DE SAUDE                                                             
+200209SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200210SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200299RESERVA DE CONTINGENCIA                                                         
+200302GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200303SECRETARIA DE ADMINISTRACAO                                                     
+200304SECRETARIA DA FAZENDA                                                           
+200305SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200306SECRETARIA DE OBRAS E VIACAO                                                    
+200307SECRETARIA DE SERVICOS URBANOS                                                  
+200308SECRETARIA DE SAUDE                                                             
+200309SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200310SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200399RESERVA DE CONTINGENCIA                                                         
+200402GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200403SECRETARIA DE ADMINISTRACAO                                                     
+200404SECRETARIA DA FAZENDA                                                           
+200405SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200406SECRETARIA DE OBRAS E VIACAO                                                    
+200407SECRETARIA DE SERVICOS URBANOS                                                  
+200408SECRETARIA DE SAUDE                                                             
+200409SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200410SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200499RESERVA DE CONTINGENCIA                                                         
+200502GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200503SECRETARIA DE ADMINISTRACAO                                                     
+200504SECRETARIA DA FAZENDA                                                           
+200505SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200506SECRETARIA DE OBRAS E VIACAO                                                    
+200507SECRETARIA DE SERVICOS URBANOS                                                  
+200508SECRETARIA DE SAUDE                                                             
+200509SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200510SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200599RESERVA DE CONTINGENCIA                                                         
+200602GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200603SECRETARIA DE ADMINISTRACAO                                                     
+200604SECRETARIA DA FAZENDA                                                           
+200605SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200606SECRETARIA DE OBRAS E VIACAO                                                    
+200607SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+200608SECRETARIA DE SAUDE                                                             
+200609SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200610SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200611ENCARGOS GERAIS                                                                 
+200699RESERVA DE CONTINGENCIA                                                         
+200702GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200703SECRETARIA DE ADMINISTRACAO                                                     
+200704SECRETARIA DA FAZENDA                                                           
+200705SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200706SECRETARIA DE OBRAS E VIACAO                                                    
+200707SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+200708SECRETARIA DE SAUDE                                                             
+200709SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200710SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200711ENCARGOS GERAIS                                                                 
+200799RESERVA DE CONTINGENCIA                                                         
+200802GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200803SECRETARIA DE ADMINISTRACAO                                                     
+200804SECRETARIA DA FAZENDA                                                           
+200805SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200806SECRETARIA DE OBRAS E VIACAO                                                    
+200807SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+200808SECRETARIA DE SAUDE                                                             
+200809SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200810SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200811ENCARGOS GERAIS                                                                 
+200899RESERVA DE CONTINGENCIA                                                         
+200902GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+200903SECRETARIA DE ADMINISTRACAO                                                     
+200904SECRETARIA DA FAZENDA                                                           
+200905SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+200906SECRETARIA DE OBRAS E VIACAO                                                    
+200907SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+200908SECRETARIA DE SAUDE                                                             
+200909SECRETARIA DA ASSISTENCIA SOCIAL                                                
+200910SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+200911ENCARGOS GERAIS                                                                 
+200999RESERVA DE CONTINGENCIA                                                         
+201002GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+201003SECRETARIA DE ADMINISTRACAO                                                     
+201004SECRETARIA DA FAZENDA                                                           
+201005SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+201006SECRETARIA DE OBRAS E VIACAO                                                    
+201007SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201008SECRETARIA DE SAUDE                                                             
+201009SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201010SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201011ENCARGOS ESPECIAIS                                                              
+201012FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+201099RESERVA DE CONTINGENCIA                                                         
+201102GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+201103SECRETARIA DE ADMINISTRACAO                                                     
+201104SECRETARIA DA FAZENDA                                                           
+201105SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+201106SECRETARIA DE OBRAS E VIACAO                                                    
+201107SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201108SECRETARIA DE SAUDE                                                             
+201109SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201110SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201111ENCARGOS ESPECIAIS                                                              
+201112FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+201199RESERVA DE CONTINGENCIA                                                         
+201202GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+201203SECRETARIA DE ADMINISTRACAO                                                     
+201204SECRETARIA DA FAZENDA                                                           
+201205SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+201206SECRETARIA DE OBRAS E VIACAO                                                    
+201207SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201208SECRETARIA DE SAUDE                                                             
+201209SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201210SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201211ENCARGOS ESPECIAIS                                                              
+201212FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+201299RESERVA DE CONTINGENCIA                                                         
+201302GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+201303SECRETARIA DE ADMINISTRACAO                                                     
+201304SECRETARIA DA FAZENDA                                                           
+201305SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+201306SECRETARIA DE OBRAS E VIACAO                                                    
+201307SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201308SECRETARIA DE SAUDE                                                             
+201309SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201310SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201311ENCARGOS ESPECIAIS                                                              
+201399RESERVA DE CONTINGENCIA                                                         
+201402GABINETE DO PREFEITO E VICE PREFEITO                                            
+201403SECRETARIA DE ADMINISTRACAO                                                     
+201404SECRETARIA DA FAZENDA                                                           
+201405SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+201406SECRETARIA DE OBRAS E VIACAO                                                    
+201407SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201408FUNDO MUNICIPAL DE SAUDE                                                        
+201409SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201410SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201411ENCARGOS ESPECIAIS                                                              
+201502GABINETE DO PREFEITO E VICE PREFEITO E DEPENDENCIAS                             
+201503SECRETARIA DE ADMINISTRACAO                                                     
+201504SECRETARIA DA FAZENDA                                                           
+201505SECRETARIA DE EDUCACAOCULTURADESPORTO E TURISMO                                 
+201506SECRETARIA DE OBRAS E VIACAO                                                    
+201507SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201508SECRETARIA DE SAUDE                                                             
+201509SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201510SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201511ENCARGOS ESPECIAIS                                                              
+201599RESERVA DE CONTINGENCIA                                                         
+201602GABINETE DO PREFEITO E VICE PREFEITO                                            
+201603SECRETARIA DE ADMINISTRACAO                                                     
+201604SECRETARIA DA FAZENDA                                                           
+201605SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+201606SECRETARIA DE OBRAS E VIACAO                                                    
+201607SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201608SECRETARIA MUNICIPAL DE SAUDE                                                   
+201609SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201610SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201611ENCARGOS ESPECIAIS                                                              
+201699RESERVA DE CONTINGENCIA                                                         
+201702GABINETE DO PREFEITO E VICE PREFEITO                                            
+201703SECRETARIA DE ADMINISTRACAO                                                     
+201704SECRETARIA DA FAZENDA                                                           
+201705SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+201706SECRETARIA DE OBRAS E VIACAO                                                    
+201707SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201708SECRETARIA MUNICIPAL DE SAUDE                                                   
+201709SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201710SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201711ENCARGOS ESPECIAIS                                                              
+201799RESERVA DE CONTINGENCIA                                                         
+201802GABINETE DO PREFEITO E VICE PREFEITO                                            
+201803SECRETARIA DE ADMINISTRACAO                                                     
+201804SECRETARIA DA FAZENDA                                                           
+201805SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+201806SECRETARIA DE OBRAS E VIACAO                                                    
+201807SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201808SECRETARIA MUNICIPAL DE SAUDE                                                   
+201809SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201810SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201811ENCARGOS ESPECIAIS                                                              
+201899RESERVA DE CONTINGENCIA                                                         
+201902GABINETE DO PREFEITO E VICE PREFEITO                                            
+201903SECRETARIA DE ADMINISTRACAO                                                     
+201904SECRETARIA DA FAZENDA                                                           
+201905SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+201906SECRETARIA DE OBRAS E VIACAO                                                    
+201907SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+201908SECRETARIA MUNICIPAL DE SAUDE                                                   
+201909SECRETARIA DA ASSISTENCIA SOCIAL                                                
+201910SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+201911ENCARGOS ESPECIAIS                                                              
+202002GABINETE DO PREFEITO E VICE PREFEITO                                            
+202003SECRETARIA DE ADMINISTRACAO                                                     
+202004SECRETARIA DA FAZENDA                                                           
+202005SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202006SECRETARIA DE OBRAS E VIACAO                                                    
+202007SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202008SECRETARIA MUNICIPAL DE SAUDE                                                   
+202009SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202010SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202011ENCARGOS ESPECIAIS                                                              
+202102GABINETE DO PREFEITO E VICE PREFEITO                                            
+202103SECRETARIA DE ADMINISTRACAO                                                     
+202104SECRETARIA DA FAZENDA                                                           
+202105SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202106SECRETARIA DE OBRAS E VIACAO                                                    
+202107SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202108SECRETARIA MUNICIPAL DE SAUDE                                                   
+202109SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202110SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202111ENCARGOS ESPECIAIS                                                              
+202202GABINETE DO PREFEITO E VICE PREFEITO                                            
+202203SECRETARIA DE ADMINISTRACAO                                                     
+202204SECRETARIA DA FAZENDA                                                           
+202205SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202206SECRETARIA DE OBRAS E VIACAO                                                    
+202207SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202208SECRETARIA MUNICIPAL DE SAUDE                                                   
+202209SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202210SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202211ENCARGOS ESPECIAIS                                                              
+202302GABINETE DO PREFEITO E VICE PREFEITO                                            
+202303SECRETARIA DE ADMINISTRACAO                                                     
+202304SECRETARIA DA FAZENDA                                                           
+202305SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202306SECRETARIA DE OBRAS E VIACAO                                                    
+202307SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202308SECRETARIA MUNICIPAL DE SAUDE                                                   
+202309SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202310SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202311ENCARGOS ESPECIAIS                                                              
+202402GABINETE DO PREFEITO E VICE PREFEITO                                            
+202403SECRETARIA DE ADMINISTRACAO                                                     
+202404SECRETARIA DA FAZENDA                                                           
+202405SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202406SECRETARIA DE OBRAS E VIACAO                                                    
+202407SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202408SECRETARIA MUNICIPAL DE SAUDE                                                   
+202409SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202410SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202411ENCARGOS ESPECIAIS                                                              
+202413SECRETARIA DE PLANEJAMENTO INDSTRIA COMRCIO E SERVIOS                           
+202450FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+202502GABINETE DO PREFEITO E VICE PREFEITO                                            
+202503SECRETARIA DE ADMINISTRACAO                                                     
+202504SECRETARIA DA FAZENDA                                                           
+202505SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202506SECRETARIA DE OBRAS E VIACAO                                                    
+202507SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202508SECRETARIA MUNICIPAL DE SAUDE                                                   
+202509SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202510SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202511ENCARGOS ESPECIAIS                                                              
+202513SECRETARIA DE PLANEJAMENTO INDSTRIA COMRCIO E SERVIOS                           
+FINALIZADOR0000000258

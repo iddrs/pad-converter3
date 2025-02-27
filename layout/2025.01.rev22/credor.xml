@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="credor">
+    <columns>
+        <col origin="source" id="credor" len="10" start="1" type="int" transformer=""></col>
+        <col origin="source" id="nome_credor" len="60" start="11" type="string" transformer="trim"></col>
+        <col origin="source" id="cnpj_cpf" len="14" start="71" type="string" transformer="trim"></col>
+        <col origin="source" id="inscricao_estadual" len="15" start="85" type="int" transformer="trim"></col>
+        <col origin="source" id="inscricao_municipal" len="15" start="100" type="int" transformer="trim"></col>
+        <col origin="source" id="endereco" len="50" start="115" type="string" transformer="trim"></col>
+        <col origin="source" id="cidade" len="30" start="165" type="string" transformer="trim"></col>
+        <col origin="source" id="uf" len="2" start="195" type="string" transformer="trim"></col>
+        <col origin="source" id="cep" len="8" start="197" type="string" transformer="trim"></col>
+        <col origin="source" id="telefone" len="15" start="205" type="string" transformer="trim"></col>
+        <col origin="source" id="fax" len="15" start="220" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_credor" len="2" start="235" type="int" transformer=""></col>
+        <col origin="source" id="tipo_pessoa" len="2" start="237" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

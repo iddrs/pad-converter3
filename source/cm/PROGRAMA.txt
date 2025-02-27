@@ -1,0 +1,406 @@
+12292535000162010120253101202527022025CAMARA DE VEREADORES DE INDEPENDENCIA-RS                                        
+20050001AAO LEGISLATIVA                                                                 
+20050010DEFESA DOS DIREITOS DA CRIANA E DO ADOLESCENTE                                  
+20050011DEFESA DOS DIREITOS DO CONSUMIDOR                                               
+20050020PLANEJAMENTO E ORAMENTAAO                                                       
+20050021ADMINISTRAAO GOVERNAMENTAL                                                      
+20050022ADMINISTRAAO DE RECEITAS                                                        
+20050023ADMINISTRAAO DOS RECEURSOS FINANCEIROS                                          
+20050024CONTROLE INTERNO                                                                
+20050025NORMATIZAAO E FISCALIZAAO                                                       
+20050026TENCNOLOGIA DA INFORMAAO                                                        
+20050027TREINAMENTO E CAPACITAAO DE RECURSOS HUMANOS                                    
+20050028DIVULGAAO OFICIAL E INSTITUCIONAL                                               
+20050029DEFESA E ASSIST  POPULAAO ATINGIDA POR CALAMIDAD                                
+20050030EVENTOS OFICIAIS DO MUNICPIO                                                    
+20050040AMPARO ASSISTENCIAL AO IDOSO                                                    
+20050041ATENAO A PESSOA PORTADORA DE DEFICIENCIA                                        
+20050042AMPARO ASSISTENCIAL A CRIANA E AO ADOLESCENTE                                   
+20050043ERRADICAAO DO TRABALHO INFANTIL                                                 
+20050044CENTROS DE VALORIZAAO DA JUVENTUDE                                              
+20050045ASSISTENCIA A COMUNIDADE                                                        
+20050046ASSISTENCIA SOCIAL GERAL                                                        
+20050050INATIVOS E PENSIONISTAS DA PREVIDENCIA ESTATUTRIA                               
+20050051CONTRIBUIOES PATRONAIS PARA A PREVIDENCIA COMPLEM                               
+20050060SADE DA CRIANA E ALEITAMENTO MATERNO                                            
+20050061AGENTES COMUNITRIOS DE SADE                                                     
+20050062ASSISTENCIA DOMICILIAR DE SADE                                                  
+20050063SADE DA MULHER                                                                  
+20050064SADE DO IDOSO                                                                   
+20050065SADE DO TRABALHADOR                                                             
+20050066SADE DO ESCOLAR                                                                 
+20050067ATENDIMENTO AMBULATORIAL E HOSPITALAR                                           
+20050068SADE MENTAL                                                                     
+20050069ASSISTENCIA FARMACEUTICA                                                        
+20050070VIGILNCIA SANITRIA DE PRODUTOS E SERVIOS                                        
+20050071PREVENAO E CONTROLE DE DOENAS                                                   
+20050073ASSISTENCIA ALIMENTAR E NUTRICIONAL                                             
+20050074SADE BUCAL                                                                      
+20050080EDUCAAO DA CRIANA DE 0 A 6 ANOS                                                 
+20050081EXPANSAO DA OFERTA DE VAGAS EM ESTABEL ENSINO INFA                              
+20050082ENSINO FUNDAMENTAL                                                              
+20050083EXPANSAO DA OFERTA DE VAGAS NO ENSINO FUNDAMENTAL                               
+20050084LIVROS E OUTROS MATERIAIS DIDTICOS P/ENSINO FUNDA                               
+20050085EQUIPAMENTOS DE INFORMTICA P/ENSINO FUNDAMENTAL                                 
+20050086TRANSPORTE ESCOLAR P/ENSINO FUNDAMENTAL                                         
+20050087TREINAMENTO E APERFEIOAMENTO DE PROFESSORES                                     
+20050088ASSISTENCIA A ESTUDANTES                                                        
+20050089ALIMENTAAO ESCOLAR                                                              
+20050090ASSISTENCIA A ESTUDANTES DO ENSINO SUPERIOR                                     
+20050091COMBATE AO ANALFABETISMO                                                        
+20050092EDUCAAO DO PORTADOR DE DEFICIENCIA                                              
+20050100MUSEUSBIBLIOTECASTEATROS E CENTROS DE CULTURA                                   
+20050101APOIO E INCENTIVO AS ARTES                                                      
+20050110VIAS E LOGRADOUROS URBANOS                                                      
+20050111VIAS EXPRESSAS                                                                  
+20050112SERVIOS DE LIMPEZA URBANA                                                       
+20050113SERVIOS FUNERRIOS                                                               
+20050114ILUMINAAO PBLICA                                                                
+20050115PARQUES E JARDINS                                                               
+20050116DRAGAGEM  LIMPEZA DE GALERIAS PLUVIAIS E CURSOS G                               
+20050117CONSTRUAO DE HABITAOES                                                          
+20050118MELHORIA DE CONDIOES DE HABITAOES                                               
+20050119SANEAMENTO BSICO                                                                
+20050120PROTEAO E PRESERVAAO DE ECOSSISTEMAS                                            
+20050121PROTEAO DE FLORESTAS E REFLORESTAMENTO                                          
+20050122CONSERVAAO DO SOLO                                                              
+20050123RECUPERAAO DE REAS DEGRADADAS                                                   
+20050124CONSERVAAO E PRESERVAAO DE RECURSOS HDRICOS                                     
+20050125SERVIOS DE TRNSITO                                                              
+20050130SEMENTES E MUDAS                                                                
+20050131MECANIZAAO AGRCOLA                                                              
+20050132INCENTIVO E AMPARO AO PEQUENO PRODUTOR                                          
+20050133HORTAS E POMARES COMUNITRIOS                                                    
+20050134DESENVOLVIMENTO DA AQUACULTURA                                                  
+20050135MELHORIA DA PRODUAO ANIMAL                                                      
+20050136DEFESA SANITRIA                                                                 
+20050137EXTENSAO E COOPERATIVISMO RURAL                                                 
+20050138PROMOAO AGRO-PECURIA                                                            
+20050139IRRIGAAO DE SOLOS                                                               
+20050140INDUSTRIALIZAAO DE ALIMENTOS                                                    
+20050141ELETRIFICAAO RURAL                                                              
+20050142TELEFONIA RURAL                                                                 
+20050150PROMOAO DO TURISMO                                                              
+20050160FOMENTO AO ASSOCIATIVISMO                                                       
+20050170ESTRADAS VICINAIS                                                               
+20050171CONSTRUAO E PAVIMENTAAO DE RODOVIAIS                                            
+20050180DESPORTO COMUNITRIO                                                             
+20050181LAZER                                                                           
+20050999RESERVA DE CONTINGENCIA                                                         
+20051001GESTAO DA POLTICA DE ASSISTENCIA SOCIAL                                         
+20051002GESTAO DA POLTICA DE PREVID REGIME ESTATUTRIO                                   
+20051003GESTAO DA POLTICA DE SADE                                                       
+20051004GESTAO DA POLTICA DA EDUCAAO                                                    
+20051005GESTAO DA POLTICA DE DESPORTOS E LAZER                                          
+20051006GESTAO DA POLTICA DE DESENVOLVIMENTO URBANO                                     
+20051007GESTAO DA POLTICA DE SANEAMENTO                                                 
+20051008GESTAO DA POLTICA DE MEIO AMBIENTE                                              
+20051009GESTAO DA POLTICA AGRO-PECURIA                                                  
+20051010GESTAO DA POLTICA DE TRANSPORTES                                                
+20051101MANUTENAO E CONSERVAAO DE BENS IMVEIS                                           
+20051102MANUTENAO DE SERVIOS DE TRANSPORTE                                              
+20051103MANUTENAO DE SERVIOS ADMINISTRATIVOS GERAIS                                     
+20051104AOES DE INFORMTICA                                                              
+20051201SERV DVIDA INTERNA CONTRAT C/INSTITUIOES FINANC                                 
+20051202SERV DVIDA INTERNA CONTRAT C/ENTID PRIVAD NAO FIN                               
+20051203SERV DVIDA INTERNA PACTUADA C/SIST PREVID SOCIAL                                
+20051204ENCARGOS SOCIAIS S/FOLHA DE PGTO SERVIDORES                                     
+20130000AOES  NO INTEGRANTES DO PPA                                                     
+20130001AAO LEGISLATIVA                                                                 
+20130010DEFESA DOS DIREITOS DA CRIANA E DO ADOLESCENTE                                  
+20130011DEFESA DOS DIREITOS DO CONSUMIDOR                                               
+20130019APOIO ADMINISTATIVO                                                             
+20130020PLANEJAMENTO E ORAMENTAAO                                                       
+20130021ADMINISTRAAO GOVERNAMENTAL                                                      
+20130022ADMINISTRAAO DE RECEITAS                                                        
+20130023ADMINISTRAAO DOS RECEURSOS FINANCEIROS                                          
+20130024CONTROLE INTERNO                                                                
+20130025NORMATIZAAO E FISCALIZAAO                                                       
+20130026TENCNOLOGIA DA INFORMAAO                                                        
+20130027TREINAMENTO E CAPACITAAO DE RECURSOS HUMANOS                                    
+20130028DIVULGAAO OFICIAL E INSTITUCIONAL                                               
+20130029DEFESA E ASSIST  POPULAAO ATINGIDA POR CALAMIDAD                                
+20130030EVENTOS OFICIAIS DO MUNICPIO                                                    
+20130040AMPARO ASSISTENCIAL AO IDOSO                                                    
+20130041ATENAO A PESSOA PORTADORA DE DEFICIENCIA                                        
+20130042AMPARO ASSISTENCIAL A CRIANA E AO ADOLESCENTE                                   
+20130043ERRADICAAO DO TRABALHO INFANTIL                                                 
+20130044CENTROS DE VALORIZAAO DA JUVENTUDE                                              
+20130045ASSISTENCIA A COMUNIDADE                                                        
+20130046ASSISTENCIA SOCIAL GERAL                                                        
+20130050INATIVOS E PENSIONISTAS DA PREVIDENCIA ESTATUTRIA                               
+20130051CONTRIBUIOES PATRONAIS PARA A PREVIDENCIA COMPLEM                               
+20130060SADE DA CRIANA E ALEITAMENTO MATERNO                                            
+20130061AGENTES COMUNITRIOS DE SADE                                                     
+20130062ASSISTENCIA DOMICILIAR DE SADE                                                  
+20130063SADE DA MULHER                                                                  
+20130064SADE DO IDOSO                                                                   
+20130065SADE DO TRABALHADOR                                                             
+20130066SADE DO ESCOLAR                                                                 
+20130067ATENDIMENTO AMBULATORIAL E HOSPITALAR                                           
+20130068SADE MENTAL                                                                     
+20130069ASSISTENCIA FARMACEUTICA                                                        
+20130070VIGILNCIA SANITRIA DE PRODUTOS E SERVIOS                                        
+20130071VIGILANCIA EPIDEMIOLGICA                                                        
+20130073ASSISTENCIA ALIMENTAR E NUTRICIONAL                                             
+20130074SADE BUCAL                                                                      
+20130080EDUCAAO DA CRIANA DE 0 A 6 ANOS                                                 
+20130081EDUCAO INFANTIL                                                                 
+20130082ENSINO FUNDAMENTAL                                                              
+20130083EXPANSAO DA OFERTA DE VAGAS NO ENSINO FUNDAMENTAL                               
+20130084LIVROS E OUTROS MATERIAIS DIDTICOS P/ENSINO FUNDA                               
+20130085ALIMENTAO DO ENSINO INFANTIL                                                    
+20130086TRANSPORTE ESCOLAR PARA O ENSINO BSICO                                          
+20130087TREINAMENTO E APERFEIOAMENTO DE PROFESSORES                                     
+20130088ASSISTENCIA A ESTUDANTES                                                        
+20130089ALIMENTAAO DO  ENSINO FUNDAMENTAL                                               
+20130090ASSISTENCIA A ESTUDANTES DO ENSINO SUPERIOR                                     
+20130091COMBATE AO ANALFABETISMO                                                        
+20130092EDUCAAO DO PORTADOR DE DEFICIENCIA                                              
+20130100MUSEUSBIBLIOTECASTEATROS E CENTROS DE CULTURA                                   
+20130101APOIO E INCENTIVO AS ARTES                                                      
+20130102TRANSPORTE COLETIVO                                                             
+20130110VIAS E LOGRADOUROS URBANOS                                                      
+20130111VIAS EXPRESSAS                                                                  
+20130112SERVIOS DE LIMPEZA URBANA                                                       
+20130113SERVIOS FUNERRIOS                                                               
+20130114ILUMINAAO PBLICA                                                                
+20130115PARQUES E JARDINS                                                               
+20130116DRAGAGEM  LIMPEZA DE GALERIAS PLUVIAIS E CURSOS G                               
+20130117CONSTRUAO DE HABITAOES                                                          
+20130118MORAR MELHOR                                                                    
+20130119SANEAMENTO BSICO                                                                
+20130120PROTEAO E PRESERVAAO DE ECOSSISTEMAS                                            
+20130121PROTEAO DE FLORESTAS E REFLORESTAMENTO                                          
+20130122CONSERVAAO DO SOLO                                                              
+20130123RECUPERAAO DE REAS DEGRADADAS                                                   
+20130124CONSERVAAO E PRESERVAAO DE RECURSOS HDRICOS                                     
+20130125SERVIOS DE TRNSITO                                                              
+20130130SEMENTES E MUDAS                                                                
+20130131MECANIZAAO AGRCOLA                                                              
+20130132INCENTIVO E AMPARO AO PEQUENO PRODUTOR                                          
+20130133HORTAS E POMARES COMUNITRIOS                                                    
+20130134DESENVOLVIMENTO DA AQUACULTURA                                                  
+20130135MELHORIA DA PRODUAO ANIMAL                                                      
+20130136DEFESA SANITRIA                                                                 
+20130137EXTENSAO E COOPERATIVISMO RURAL                                                 
+20130138PROMOAO AGRO-PECURIA                                                            
+20130139IRRIGAAO DE SOLOS                                                               
+20130140INDUSTRIALIZAAO DE ALIMENTOS                                                    
+20130141ELETRIFICAAO RURAL                                                              
+20130142TELEFONIA RURAL                                                                 
+20130143DEFESA CIVIL                                                                    
+20130150PROMOAO DO TURISMO                                                              
+20130160FOMENTO AO ASSOCIATIVISMO                                                       
+20130170ESTRADAS VICINAIS                                                               
+20130171CONSTRUAO E PAVIMENTAAO DE RODOVIAIS                                            
+20130180DESPORTO COMUNITRIO                                                             
+20130181LAZER                                                                           
+20130190GESTO DA POLTICA DA INDSTRIA E COMRCIO                                          
+20130901OPERAES ESPECIAIS - CUMPRIMENTO DE SENTENAS JUD                                 
+20130902OPERAES EPECIAIS - FINANCIAMENTO COM RETORNO                                    
+20130903OPERAES ESPECIAIS - TRANSFERENCIAS  UNIO E AO                                   
+20130904OPERAES ESPECIAIS - OUTRAS TRANSFERNCIAS                                        
+20130905OPERAES ESPECIAIS - SERVIO DA DVIDA INTERNA                                     
+20130906OPERAES ESPECIAIS - SERVIOS DA DVIDA EXTERNA                                    
+20130907OPERAES ESPECIAIS - OUTROS ENCARGOS ESPECIAIS                                   
+20130908FOMENTO AO TRABALHO E EMPREGO                                                   
+20130999RESERVA DE CONTINGENCIA                                                         
+20131001GESTAO DA POLTICA DE ASSISTENCIA SOCIAL                                         
+20131002GESTAO DA POLTICA DE PREVID REGIME ESTATUTRIO                                   
+20131003GESTAO DA POLTICA DE SADE                                                       
+20131004GESTAO DA POLTICA DA EDUCAAO                                                    
+20131005GESTAO DA POLTICA DE DESPORTOS E LAZER                                          
+20131006GESTAO DA POLTICA DE DESENVOLVIMENTO URBANO                                     
+20131007GESTAO DA POLTICA DE SANEAMENTO                                                 
+20131008GESTAO DA POLTICA DE MEIO AMBIENTE                                              
+20131009GESTAO DA POLTICA AGRO-PECURIA                                                  
+20131010GESTAO DA POLTICA DE TRANSPORTES                                                
+20131011GESTO DA POLTICA DA INDSTRIA E COMRCIO                                          
+20131101MANUTENAO E CONSERVAAO DE BENS IMVEIS                                           
+20131102MANUTENAO DE SERVIOS DE TRANSPORTE                                              
+20131103MANUTENAO DE SERVIOS ADMINISTRATIVOS GERAIS                                     
+20131104AOES DE INFORMTICA                                                              
+20131201SERV DVIDA INTERNA CONTRAT C/INSTITUIOES FINANC                                 
+20131202SERV DVIDA INTERNA CONTRAT C/ENTID PRIVAD NAO FIN                               
+20131203SERV DVIDA INTERNA PACTUADA C/SIST PREVID SOCIAL                                
+20131204ENCARGOS SOCIAIS S/FOLHA DE PGTO SERVIDORES                                     
+20140000ENCARGOS ESPECIAIS                                                              
+20140001APOIO ADMINISTRATIVO                                                            
+20140002PREVIDENCIA DO SERVIDOR ESTATUTARIO                                             
+20140003ACAO LEGISLATIVA                                                                
+20140004DEFESA DAS CRIANCAS E ADOLESCENTES                                              
+20140005INFRAESTRUTURA RURAL                                                            
+20140006INFRAESTRUTURA URBANA                                                           
+20140007SERVICOS URBANOS                                                                
+20140008TRANSITO MUNICIPAL                                                              
+20140009ASSISTENCIA AO IDOSO                                                            
+20140010ASSISTENCIA A FAMILIAS                                                          
+20140011HABITACAO DE INTERESSE SOCIAL                                                   
+20140012FOMENTO A AGRICULTURA                                                           
+20140013FOMENTO AO COMERCIO INDUSTRIA E SERVICOS                                        
+20140014DEFESA CIVIL                                                                    
+20140015PROGRAMA DE PRESERVACAO AMBIENTAL                                               
+20140016FORMACAO DE RECURSOS HUMANOS                                                    
+20140017ALIMENTACAO E NUTRICAO - MERENDA ESCOLAR                                        
+20140018ENSINO FUNDAMENTAL                                                              
+20140019TRANSPORTE ESCOLAR PARA O ENSINO BASICO                                         
+20140020PROMOCAO DA DIFUSAO CULTURAL                                                    
+20140021EDUCACAO INFANTIL                                                               
+20140022INCENTIVO AO DESPORTO E LAZER COMUNITARIOS                                      
+20140023PROMOCAO AO TURISMO                                                             
+20140024ATENCAO BASICA                                                                  
+20140025ATENCAO MAC AMBULATORIAL E HOSPITALAR                                           
+20140026VIGILANCIA EM SAUDE                                                             
+20140027ASSISTENCIA FAMACEUTICA                                                         
+20140030ASSISTENCIA A PORTADORES DE DEFICIENCIA                                         
+20140031PROGRAMA DE APOIO A MULHER                                                      
+20140032INCENTIVO A GERACAO DE EMPREGO E RENDA                                          
+20149999RESERVA DE CONTINGENCIA                                                         
+20180000ENCARGOS ESPECIAIS                                                              
+20180001APOIO ADMINISTRATIVO                                                            
+20180002EDUCAO E CIDADANIA                                                              
+20180003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20180004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20180005PROGRAMA DE GESTO DA SADE                                                       
+20180006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20180007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20180008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20180009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20180010SERVIOS URBANOS                                                                 
+20180011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20180012SANEAMENTO BSICO                                                                
+20180013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20180014SEGURANA E DEFESA CIVIL                                                         
+20180015AO LEGISLATIVA                                                                  
+20180016HABITAO URBANA E RURAL                                                          
+20180017INFRAESTRUTURA URBANA E RURAL                                                   
+20180018TRNSITO MUNICIPAL                                                               
+20180020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20190000ENCARGOS ESPECIAIS                                                              
+20190001APOIO ADMINISTRATIVO                                                            
+20190002EDUCAO E CIDADANIA                                                              
+20190003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20190004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20190005PROGRAMA DE GESTO DA SADE                                                       
+20190006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20190007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20190008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20190009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20190010SERVIOS URBANOS                                                                 
+20190011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20190012SANEAMENTO BSICO                                                                
+20190013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20190014SEGURANA E DEFESA CIVIL                                                         
+20190015AO LEGISLATIVA                                                                  
+20190016HABITAO URBANA E RURAL                                                          
+20190017INFRAESTRUTURA URBANA E RURAL                                                   
+20190018TRNSITO MUNICIPAL                                                               
+20190020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20199999RESERVAS DE CONTINGNCIA E DO RPPS                                               
+20210000ENCARGOS ESPECIAIS                                                              
+20210001APOIO ADMINISTRATIVO                                                            
+20210002EDUCAO E CIDADANIA                                                              
+20210003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20210004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20210005PROGRAMA DE GESTO DA SADE                                                       
+20210006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20210007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20210008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20210009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20210010SERVIOS URBANOS                                                                 
+20210011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20210012SANEAMENTO BSICO                                                                
+20210013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20210014SEGURANA E DEFESA CIVIL                                                         
+20210015AO LEGISLATIVA                                                                  
+20210016HABITAO URBANA E RURAL                                                          
+20210017INFRAESTRUTURA URBANA E RURAL                                                   
+20210018TRNSITO MUNICIPAL                                                               
+20210020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20219999RESERVAS DE CONTINGNCIA E DO RPPS                                               
+20220000ENCARGOS ESPECIAIS                                                              
+20220001APOIO ADMINISTRATIVO                                                            
+20220002EDUCAO E CIDADANIA                                                              
+20220003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20220004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20220005PROGRAMA DE GESTO DA SADE                                                       
+20220006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20220007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20220008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20220009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20220010SERVIOS URBANOS                                                                 
+20220011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20220012SANEAMENTO BSICO                                                                
+20220013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20220014SEGURANA E DEFESA CIVIL                                                         
+20220015AO LEGISLATIVA                                                                  
+20220016HABITAO URBANA E RURAL                                                          
+20220017INFRAESTRUTURA URBANA E RURAL                                                   
+20220018TRNSITO MUNICIPAL                                                               
+20220020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20220021INCENTIVO PARA AS INDSTRIAS COMRCIO E PRESTADORAS DE SERVIO                     
+20230000ENCARGOS ESPECIAIS                                                              
+20230001APOIO ADMINISTRATIVO                                                            
+20230002EDUCAO E CIDADANIA                                                              
+20230003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20230004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20230005PROGRAMA DE GESTO DA SADE                                                       
+20230006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20230007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20230008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20230009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20230010SERVIOS URBANOS                                                                 
+20230011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20230012SANEAMENTO BSICO                                                                
+20230013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20230014SEGURANA E DEFESA CIVIL                                                         
+20230015AO LEGISLATIVA                                                                  
+20230016HABITAO URBANA E RURAL                                                          
+20230017INFRAESTRUTURA URBANA E RURAL                                                   
+20230018TRNSITO MUNICIPAL                                                               
+20230020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20230021INCENTIVO PARA AS INDSTRIAS COMRCIO E PRESTADORAS DE SERVIO                     
+20240000ENCARGOS ESPECIAIS                                                              
+20240001APOIO ADMINISTRATIVO                                                            
+20240002EDUCAO E CIDADANIA                                                              
+20240003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20240004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20240005PROGRAMA DE GESTO DA SADE                                                       
+20240006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20240007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20240008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20240009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20240010SERVIOS URBANOS                                                                 
+20240011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20240012SANEAMENTO BSICO                                                                
+20240013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20240014SEGURANA E DEFESA CIVIL                                                         
+20240015AO LEGISLATIVA                                                                  
+20240016HABITAO URBANA E RURAL                                                          
+20240017INFRAESTRUTURA URBANA E RURAL                                                   
+20240018TRNSITO MUNICIPAL                                                               
+20240020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20240021INCENTIVO PARA AS INDSTRIAS COMRCIO E PRESTADORAS DE SERVIO                     
+20250000ENCARGOS ESPECIAIS                                                              
+20250001APOIO ADMINISTRATIVO                                                            
+20250002EDUCAO E CIDADANIA                                                              
+20250003PROMOO DA CULTURA DESPORTO E LAZER COMUNITRIOS                                  
+20250004DESENVOLVIMENTO ECONMICO E PRODUO AGRCOLA                                       
+20250005PROGRAMA DE GESTO DA SADE                                                       
+20250006PROGRAMA DE ATENO BSICA EM SADE                                                 
+20250007PROGRAMA DE VIGILNCIA EM SADE                                                   
+20250008PROGRAMA DE ACESSO AOS SERVIOS DE SADE DE MDIA E ALTA COMPLEXIDADE HOSPITALAR E 
+20250009PROGRAMA DE ASSISTNCIA FARMACUTICA                                              
+20250010SERVIOS URBANOS                                                                 
+20250011ASSISTNCIA PROTEO E INCLUSO SOCIAL                                              
+20250012SANEAMENTO BSICO                                                                
+20250013GESTO PROTEO E RECUPERAO DO MEIO AMBIENTE                                       
+20250014SEGURANA E DEFESA CIVIL                                                         
+20250015AO LEGISLATIVA                                                                  
+20250016HABITAO URBANA E RURAL                                                          
+20250017INFRAESTRUTURA URBANA E RURAL                                                   
+20250018TRNSITO MUNICIPAL                                                               
+20250020PREVIDNCIA DO SERVIDOR ESTATUTRIO                                               
+20250021INCENTIVO PARA AS INDSTRIAS COMRCIO E PRESTADORAS DE SERVIO                     
+FINALIZADOR0000000404

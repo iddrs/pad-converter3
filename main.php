@@ -20,10 +20,15 @@ $mes = str_pad($mes, 2, '0', STR_PAD_LEFT);
  */
 //$mes = '01';
 //$ano = '2024';
-$layout_dir = './layout/2024.01.rev20/';
+$layout_dir = './layout/2025.01.rev22/';
+//$source_dirs = [
+//    "Z:\\Abase\\ARQUIVOSPAD\\$ano\\MES$mes\\",
+//    "Z:\\Abase\\ARQUIVOSPAD\\$ano\\CAMARA\\MES$mes\\"
+//];
 $source_dirs = [
-    "Z:\\Abase\\ARQUIVOSPAD\\$ano\\MES$mes\\",
-    "Z:\\Abase\\ARQUIVOSPAD\\$ano\\CAMARA\\MES$mes\\"
+    ".\\source\\pm\\",
+    ".\\source\\fpsm\\",
+    ".\\source\\cm\\",
 ];
 $remessa = (int) $ano.$mes;
 

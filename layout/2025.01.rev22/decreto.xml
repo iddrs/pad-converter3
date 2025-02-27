@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="decreto">
+    <columns>
+        <col origin="source" id="nr_lei" len="20" start="1" type="string" transformer="trim"></col>
+        <col origin="source" id="data_lei" len="8" start="21" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="nr_decreto" len="20" start="29" type="string" transformer="trim"></col>
+        <col origin="source" id="data_decreto" len="8" start="49" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_credito_adicional" len="13" start="57" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_reducao_dotacao" len="13" start="70" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="tipo_credito_adicional" len="1" start="83" type="int" transformer=""></col>
+        <col origin="source" id="origem_recurso" len="1" start="84" type="int" transformer=""></col>
+        <col origin="source" id="alteracao_orcamentaria" len="1" start="85" type="int" transformer=""></col>
+        <col origin="source" id="valor_alteracao_orcamentaria" len="13" start="86" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="data_reabertura_credito_adicional" len="8" start="99" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_saldo_reaberto" len="13" start="107" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso_suplementacao" len="1" start="128" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso_suplementacao" len="3" start="129" type="int" transformer=""></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso_reducao" len="1" start="132" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso_reducao" len="3" start="133" type="int" transformer=""></col>
+        <col origin="source" id="data_operacao" len="8" start="136" type="date" transformer="date_fmt"></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

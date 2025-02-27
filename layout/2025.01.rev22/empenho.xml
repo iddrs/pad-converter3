@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="empenho">
+    <columns>
+        <col origin="source" id="orgao" len="2" start="1" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="3" type="int" transformer=""></col>
+        <col origin="source" id="funcao" len="2" start="5" type="int" transformer=""></col>
+        <col origin="source" id="subfuncao" len="3" start="7" type="int" transformer=""></col>
+        <col origin="source" id="programa" len="4" start="10" type="int" transformer=""></col>
+        <col origin="source" id="projativ" len="5" start="17" type="int" transformer=""></col>
+        <col origin="source" id="rubrica" len="15" start="22" type="string" transformer="ndo_fmt"></col>
+        <col origin="source" id="recurso_vinculado" len="4" start="37" type="int" transformer=""></col>
+        <col origin="source" id="contrapartida_recurso_vinculado" len="4" start="41" type="int" transformer=""></col>
+        <col origin="source" id="chave_empenho" len="13" start="45" type="string" transformer=""></col>
+        <col origin="source" id="ano_empenho" len="5" start="45" type="int" transformer=""></col>
+        <col origin="source" id="entidade_empenho" len="2" start="50" type="int" transformer=""></col>
+        <col origin="source" id="nr_empenho" len="6" start="52" type="int" transformer=""></col>
+        <col origin="source" id="data_empenho" len="8" start="58" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_empenho" len="14" start="66" type="currency" transformer="currency_post_signal_fmt"></col>
+        <col origin="source" id="credor" len="10" start="80" type="int" transformer=""></col>
+        <col origin="source" id="caracteristica_peculiar_despesa" len="3" start="255" type="int" transformer=""></col>
+        <col origin="source" id="registro_precos" len="1" start="260" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="nr_licitacao" len="20" start="281" type="int" transformer=""></col>
+        <col origin="source" id="ano_licitacao" len="4" start="301" type="int" transformer=""></col>
+        <col origin="source" id="historico_empenho" len="400" start="305" type="string" transformer="trim"></col>
+        <col origin="source" id="forma_contratacao" len="3" start="705" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="base_legal_contratacao" len="2" start="708" type="int" transformer=""></col>
+        <col origin="source" id="identificador_despesa_funcionario" len="1" start="710" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="licitacao_compartilhada" len="1" start="711" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="cnpj_gerenciador" len="14" start="712" type="string" transformer=""></col>
+        <col origin="source" id="complemento_recurso_vinculado" len="4" start="726" type="int" transformer=""></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="730" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="731" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="734" type="int" transformer=""></col>
+        <col origin="source" id="detalhamento_tce" len="4" start="738" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

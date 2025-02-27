@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="receita">
+    <columns>
+        <col origin="source" id="codigo_receita" len="20" start="1" type="string" transformer="nro_fmt"></col>
+        <col origin="calc" id="natureza_receita" type="string" fn="natureza_receita"></col>
+        <col origin="calc" id="categoria_receita" type="string" fn="categoria_receita"></col>
+        <col origin="calc" id="tipo_receita" type="int" fn="tipo_receita"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="realizada_jan" len="13" start="25" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_fev" len="13" start="38" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_mar" len="13" start="51" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_abr" len="13" start="64" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_mai" len="13" start="77" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_jun" len="13" start="90" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_jul" len="13" start="103" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_ago" len="13" start="116" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_set" len="13" start="129" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_out" len="13" start="142" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_nov" len="13" start="155" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="realizada_dez" len="13" start="168" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_1bim" len="12" start="181" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_2bim" len="12" start="193" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_3bim" len="12" start="205" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_4bim" len="12" start="217" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_5bim" len="12" start="229" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="meta_6bim" len="12" start="241" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="caracteristica_peculiar_receita" len="3" start="253" type="int" transformer=""></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="264" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="265" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="268" type="int" transformer=""></col>
+        <col origin="source" id="detalhamento_tce" len="4" start="272" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+        <col origin="calc" id="realizada_1bim" type="currency" fn="realizada_1bim"></col>
+        <col origin="calc" id="realizada_2bim" type="currency" fn="realizada_2bim"></col>
+        <col origin="calc" id="realizada_3bim" type="currency" fn="realizada_3bim"></col>
+        <col origin="calc" id="realizada_4bim" type="currency" fn="realizada_4bim"></col>
+        <col origin="calc" id="realizada_5bim" type="currency" fn="realizada_5bim"></col>
+        <col origin="calc" id="realizada_6bim" type="currency" fn="realizada_6bim"></col>
+        <col origin="calc" id="meta_jan" type="currency" fn="meta_jan"></col>
+        <col origin="calc" id="meta_fev" type="currency" fn="meta_fev"></col>
+        <col origin="calc" id="meta_mar" type="currency" fn="meta_mar"></col>
+        <col origin="calc" id="meta_abr" type="currency" fn="meta_abr"></col>
+        <col origin="calc" id="meta_mai" type="currency" fn="meta_mai"></col>
+        <col origin="calc" id="meta_jun" type="currency" fn="meta_jun"></col>
+        <col origin="calc" id="meta_jul" type="currency" fn="meta_jul"></col>
+        <col origin="calc" id="meta_ago" type="currency" fn="meta_ago"></col>
+        <col origin="calc" id="meta_set" type="currency" fn="meta_set"></col>
+        <col origin="calc" id="meta_out" type="currency" fn="meta_out"></col>
+        <col origin="calc" id="meta_nov" type="currency" fn="meta_nov"></col>
+        <col origin="calc" id="meta_dez" type="currency" fn="meta_dez"></col>
+    </columns>
+</layout>
+

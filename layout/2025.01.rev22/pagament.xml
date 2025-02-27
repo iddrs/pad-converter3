@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="pagament">
+    <columns>
+        <col origin="source" id="chave_empenho" len="13" start="1" type="string" transformer=""></col>
+        <col origin="source" id="ano_empenho" len="5" start="1" type="int" transformer=""></col>
+        <col origin="source" id="entidade_empenho" len="2" start="6" type="int" transformer=""></col>
+        <col origin="source" id="nr_empenho" len="6" start="8" type="int" transformer=""></col>
+        <col origin="source" id="nr_pagamento" len="20" start="14" type="int" transformer=""></col>
+        <col origin="source" id="data_pagamento" len="8" start="34" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_pagamento" len="14" start="42" type="currency" transformer="currency_post_signal_fmt"></col>
+        <col origin="source" id="codigo_operacao" len="30" start="176" type="string" transformer="trim"></col>
+        <col origin="source" id="conta_contabil_debito" len="20" start="206" type="string" transformer="cc_fmt"></col>
+        <col origin="source" id="orgao_debito" len="2" start="226" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam_debito" len="2" start="228" type="int" transformer=""></col>
+        <col origin="source" id="conta_contabil_credito" len="20" start="230" type="string" transformer="cc_fmt"></col>
+        <col origin="source" id="orgao_credito" len="2" start="250" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam_credito" len="2" start="252" type="int" transformer=""></col>
+        <col origin="source" id="historico_pagamento" len="400" start="254" type="string" transformer="trim"></col>
+        <col origin="source" id="nr_liquidacao" len="20" start="654" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+
