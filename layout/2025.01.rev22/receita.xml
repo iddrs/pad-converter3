@@ -3,8 +3,6 @@
     <columns>
         <col origin="source" id="codigo_receita" len="20" start="1" type="string" transformer="nro_fmt"></col>
         <col origin="calc" id="natureza_receita" type="string" fn="natureza_receita"></col>
-        <col origin="calc" id="categoria_receita" type="string" fn="categoria_receita"></col>
-        <col origin="calc" id="tipo_receita" type="int" fn="tipo_receita"></col>
         <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
         <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
         <col origin="source" id="realizada_jan" len="13" start="25" type="currency" transformer="currency_fmt"></col>
@@ -54,6 +52,8 @@
         <col origin="calc" id="meta_out" type="currency" fn="meta_out"></col>
         <col origin="calc" id="meta_nov" type="currency" fn="meta_nov"></col>
         <col origin="calc" id="meta_dez" type="currency" fn="meta_dez"></col>
+        <col origin="calc" id="categoria_receita" type="string" fn="categoria_receita"></col>
+        <col origin="calc" id="tipo_receita" type="int" fn="tipo_receita"></col>
     </columns>
 </layout>
 

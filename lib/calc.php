@@ -101,9 +101,12 @@ function natureza_receita(array $row): string
 
 function categoria_receita(array $row): string
 {
+    if($row['caracteristica_peculiar_receita'] > 0){
+        return 'dedutora';
+    }
     switch ($row['codigo_receita'][0]) {
-        case 9:
-            return 'dedutora';
+//        case 9:
+//            return 'dedutora';
         case 7:
         case 8:
             return 'intra';
