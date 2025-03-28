@@ -1,13 +1,8 @@
 <?php
 
-//$remessa = 202312;//para teste
-//$remessa = 202401;//para teste
-
 /**
- * Monta uma tabela de restos a pagar com base em empenho, liquida, pagament.
+ * Monta uma tabela de restos a pagar com base em empenho, liquidac, pagament.
  */
-
-//require 'vendor/autoload.php';
 
 function monta_restos_pagar(int $remessa, PgSql\Connection $con) {
     // Prepara variáveis globais
@@ -15,17 +10,8 @@ function monta_restos_pagar(int $remessa, PgSql\Connection $con) {
     $data_final = date_create_from_format('Ymd', $remessa.'01');
     $data_final->modify('last day of this month');
 
-    // Conecta ao banco de dados.
-//    $connectionString = 'host=localhost port=5432 dbname=pmidd user=postgres password=lise890';
-//    $con = pg_connect($connectionString);
-//    if(!$con) {
-//        $error = pg_last_error($con);
-//        trigger_error ("Falha ao conectar com {$connectionString}: {$error}", E_USER_ERROR);
-//    }
-//    printf('Conectado a %s'.PHP_EOL, $connectionString);
-
-    // Seleciona os empenhos.
-    $sql = sprintf('SELECT DISTINCT
+    // Pré-seleciona os empenhos.
+    $sql = sprintf("SELECT distinct
                             REMESSA,
                             ORGAO,
                             UNIORCAM,
@@ -47,19 +33,22 @@ function monta_restos_pagar(int $remessa, PgSql\Connection $con) {
                             FONTE_RECURSO,
                             CODIGO_ACOMPANHAMENTO_ORCAMENTARIO,
                             ENTIDADE
-                    FROM PAD.EMPENHO WHERE REMESSA = %d AND ANO_EMPENHO < %d', $remessa, $data_inicial->format('Y'));
-
+                    FROM PAD.EMPENHO WHERE REMESSA = %d AND ANO_EMPENHO < %d
+                    ", $remessa, $data_inicial->format('Y'), $data_inicial->format('Y-m-d'));
+//    echo $sql;exit();
     $empenhos = pg_query($con, $sql);
-    printf('Encontrados %d empenhos.'.PHP_EOL, pg_num_rows($empenhos));
+    printf('Encontrados %d empenhos de exercícios anteriores.'.PHP_EOL, pg_num_rows($empenhos));
 
     $soma = [
+        'empenhado' => 0.0,
+        'liquidado' => 0.0,
+        'pago' => 0.0,
         'saldo_nao_processado_inscritos_exercicios_anteriores' => 0.0,
         'nao_processado_inscritos_ultimo_exercicio' => 0.0,
         'saldo_inicial_nao_processado' => 0.0,
+        'saldo_inicial_processado' => 0.0,
         'saldo_processado_inscritos_exercicios_anteriores' => 0.0,
         'processado_inscritos_ultimo_exercicio' => 0.0,
-        'saldo_inicial_nao_processado' => 0.0,
-        'saldo_inicial_processado' => 0.0,
         'rp_saldo_inicial' => 0.0,
         'rp_liquidado' => 0.0,
         'nao_processado_cancelado' => 0.0,
@@ -71,339 +60,346 @@ function monta_restos_pagar(int $remessa, PgSql\Connection $con) {
         'saldo_final_nao_processado' => 0.0,
         'saldo_final_processado' => 0.0,
         'rp_saldo_final' => 0.0
-    ];//para teste
+    ];
 
-    $rp = pg_fetch_all($empenhos, PGSQL_ASSOC);
-
-    // Calcula nao processados inscritos em exercícios anteriores
-    foreach ($rp as $i => $row){
-        $row['remessa'] = 0;// Necessário para incluir a remesssa sem excluir os dados antigos
-        $sql = sprintf('SELECT SUM(VALOR_EMPENHO) AS EMPENHADO
-                        FROM PAD.EMPENHO
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_EMPENHO < \'%s\' AND ANO_EMPENHO < %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
+    // Identifica empenhos com saldo a pagar
+    $rp = [];
+    foreach (pg_fetch_all($empenhos, PGSQL_ASSOC) as $item){
+        $chave = $item['chave_empenho'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_empenho)::decimal AS empenhado
+            FROM pad.empenho
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_empenho < '%s'
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'));
         $result = pg_query($con, $sql);
-        $empenhado = money_to_float(pg_fetch_all($result)[0]['empenhado']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\' AND ANO_EMPENHO < %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
+        $empenhado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['empenhado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_pagamento)::decimal AS pago
+            FROM pad.pagament
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_pagamento < '%s'
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'));
         $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
+        $pago = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['pago'];
 
-        $valor = $empenhado - $liquidado;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_nao_processado_inscritos_exercicios_anteriores' => $valor]);
-        $soma['saldo_nao_processado_inscritos_exercicios_anteriores'] += $valor;
-    }
-
-    // Calcula nao processados inscritos no exercicio anterior
-    foreach ($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_EMPENHO) AS EMPENHADO
-                        FROM PAD.EMPENHO
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_EMPENHO < \'%s\' AND ANO_EMPENHO = %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $empenhado = money_to_float(pg_fetch_all($result)[0]['empenhado']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\' AND ANO_EMPENHO = %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        $valor = $empenhado - $liquidado;
-        $rp[$i] = array_merge($rp[$i], $row, ['nao_processado_inscritos_ultimo_exercicio' => $valor]);
-        $soma['nao_processado_inscritos_ultimo_exercicio'] += $valor;
-    }
-
-    // Calcula o saldo inicial de restos não processados
-    foreach($rp as $i => $row){
-        // valor empenhado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_EMPENHO) AS EMPENHADO
-                        FROM PAD.EMPENHO
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_EMPENHO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $empenhado = money_to_float(pg_fetch_all($result)[0]['empenhado']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        // saldo rpnp
-        $saldo_rpnp = $empenhado - $liquidado;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_inicial_nao_processado' => $saldo_rpnp]);
-        $soma['saldo_inicial_nao_processado'] += $saldo_rpnp;
-    }
-
-    // Calcula processados inscritos em exercícios anteriores
-    foreach ($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO < \'%s\' AND ANO_EMPENHO < %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\' AND ANO_EMPENHO < %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        $valor = $liquidado - $pago;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_processado_inscritos_exercicios_anteriores' => $valor]);
-        $soma['saldo_processado_inscritos_exercicios_anteriores'] += $valor;
-    }
-
-    // Calcula processados inscritos no exercicio anterior
-    foreach ($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO < \'%s\' AND ANO_EMPENHO = %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\' AND ANO_EMPENHO = %d', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_inicial->format('Y') - 1);
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        $valor = $liquidado - $pago;
-        $rp[$i] = array_merge($rp[$i], $row, ['processado_inscritos_ultimo_exercicio' => $valor]);
-        $soma['processado_inscritos_ultimo_exercicio'] += $valor;
-    }
-
-    // Calcula o saldo inicial de restos processados
-    foreach ($rp as $i => $row){
-        // valor pago antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-
-        // valor liquidado antes da data inicial
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_LIQUIDACAO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        // saldo rpp
-        $saldo_rpp = $liquidado - $pago;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_inicial_processado' => $saldo_rpp]);
-        $soma['saldo_inicial_processado'] += $saldo_rpp;
-    }
-
-    // Calcula as liquidações no período
-    foreach ($rp as $i => $row){
-        if($row['saldo_inicial_nao_processado'] > 0.0){
-            $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                            FROM PAD.LIQUIDAC
-                            WHERE REMESSA = %d
-                                    --AND VALOR_LIQUIDACAO > \'0.00\'::money
-                                    AND CHAVE_EMPENHO LIKE \'%s\'
-                                    AND DATA_LIQUIDACAO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
-            $result = pg_query($con, $sql);
-            $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
+        $rp_saldo_inicial = (float) round($empenhado - $pago, 2);
+        if($rp_saldo_inicial > 0){
+            $item = array_merge($item, $soma);
+            $item['rp_saldo_inicial'] = $rp_saldo_inicial;
+            $item['pago'] = $pago;
+            $item['empenhado'] = $empenhado;
+            $rp[$chave] = $item;
+            $rp[$chave]['remessa'] = 0;
         }else{
-            $liquidado = 0.0;
+            printf("%s : %s\t\t\t\t\t\t%s\t\t\t\t\t\t%s".PHP_EOL, $item['chave_empenho'], number_format($item['empenhado'], 2, ',', '.'), number_format($pago, 2, ',', '.'), number_format($rp_saldo_inicial, 2, ',', '.'));
         }
-
-        $rp[$i] = array_merge($rp[$i], $row, ['rp_liquidado' => $liquidado]);
-        $soma['rp_liquidado'] += $liquidado;
     }
-
-    // Calcula os pagamentos de restos não processados no período
-    foreach ($rp as $i => $row){
-        if($row['saldo_inicial_nao_processado'] > 0.0){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
+    printf('Encontrados %d empenhos de restos a pagar.'.PHP_EOL, count($rp));
+    echo 'Saldo Inicial Total: ', number_format(array_sum(array_column($rp, 'rp_saldo_inicial')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial não processado
+    foreach ($rp as $chave => $item){
+        $empenhado = $item['empenhado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao < '%s'
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'));
         $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-        } else {
-            $pago = 0.0;
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+
+        $saldo_inicial_nao_processado = (float) round($empenhado - $liquidado, 2);
+        $rp[$chave]['saldo_inicial_nao_processado'] = $saldo_inicial_nao_processado;
+        $rp[$chave]['liquidado'] = $liquidado;
+    }
+    echo 'Saldo Inicial Não Processado: ', number_format(array_sum(array_column($rp, 'saldo_inicial_nao_processado')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial não processado inscritos em exercícios anteriores
+    foreach ($rp as $chave => $item){
+        $data_inicial_anterior = date_create_from_format('Ymd', ($data_inicial->format('Y')-1).'0101');
+        $sql = sprintf("
+            SELECT
+                SUM(valor_empenho)::decimal AS empenhado
+            FROM pad.empenho
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_empenho < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $empenhado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['empenhado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'));
+        $result = pg_query($con, $sql);
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+
+        $saldo_nao_processado_inscritos_exercicios_anteriores = (float) round($empenhado - $liquidado, 2);
+        $rp[$chave]['saldo_nao_processado_inscritos_exercicios_anteriores'] = $saldo_nao_processado_inscritos_exercicios_anteriores;
+    }
+    echo 'Saldo Não Processado inscritos em exercícios anteriores: ', number_format(array_sum(array_column($rp, 'saldo_nao_processado_inscritos_exercicios_anteriores')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial não processado inscritos no último exercício
+    foreach ($rp as $chave => $item){
+        $data_inicial_anterior = date_create_from_format('Ymd', ($data_inicial->format('Y')-1).'0101');
+        $sql = sprintf("
+            SELECT
+                SUM(valor_empenho)::decimal AS empenhado
+            FROM pad.empenho
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_empenho >= '%s' and data_empenho < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'), $data_inicial->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $empenhado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['empenhado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao >= '%s' and data_liquidacao < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'), $data_inicial->format('Y-m-d'));
+        $result = pg_query($con, $sql);
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+
+        $nao_processado_inscritos_ultimo_exercicio = (float) round($empenhado - $liquidado, 2);
+        $rp[$chave]['nao_processado_inscritos_ultimo_exercicio'] = $nao_processado_inscritos_ultimo_exercicio;
+    }
+    echo 'Saldo Não Processado inscritos no último exercício: ', number_format(array_sum(array_column($rp, 'nao_processado_inscritos_ultimo_exercicio')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial não processado
+    foreach ($rp as $chave => $item){
+        $liquidado = $item['liquidado'];
+        $pago = $item['pago'];
+        $saldo_inicial_processado = (float) round($liquidado - $pago, 2);
+        $rp[$chave]['saldo_inicial_processado'] = $saldo_inicial_processado;
+    }
+    echo 'Saldo Inicial Processado: ', number_format(array_sum(array_column($rp, 'saldo_inicial_processado')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial processado inscritos em exercícios anteriores
+    foreach ($rp as $chave => $item){
+        $data_inicial_anterior = date_create_from_format('Ymd', ($data_inicial->format('Y')-1).'0101');
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_pagamento)::decimal AS pago
+            FROM pad.pagament
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_pagamento < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'));
+        $result = pg_query($con, $sql);
+        $pago = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['pago'];
+
+        $saldo_processado_inscritos_exercicios_anteriores = (float) round($liquidado - $pago, 2);
+        $rp[$chave]['saldo_processado_inscritos_exercicios_anteriores'] = $saldo_processado_inscritos_exercicios_anteriores;
+    }
+    echo 'Saldo Processado inscritos em exercícios anteriores: ', number_format(array_sum(array_column($rp, 'saldo_processado_inscritos_exercicios_anteriores')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o saldo inicial processado inscritos no último exercício
+    foreach ($rp as $chave => $item){
+        $data_inicial_anterior = date_create_from_format('Ymd', ($data_inicial->format('Y')-1).'0101');
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao >= '%s' and data_liquidacao < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'), $data_inicial->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+        
+        $sql = sprintf("
+            SELECT
+                SUM(valor_pagamento)::decimal AS pago
+            FROM pad.pagament
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_pagamento >= '%s' and data_pagamento < '%s'
+            ", $remessa, $chave, $data_inicial_anterior->format('Y-m-d'), $data_inicial->format('Y-m-d'));
+        $result = pg_query($con, $sql);
+        $pago = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['pago'];
+
+        $processado_inscritos_ultimo_exercicio = (float) round($liquidado - $pago, 2);
+        $rp[$chave]['processado_inscritos_ultimo_exercicio'] = $processado_inscritos_ultimo_exercicio;
+    }
+    echo 'Saldo Processado inscritos no último exercício: ', number_format(array_sum(array_column($rp, 'processado_inscritos_ultimo_exercicio')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o RPNP liquidado
+    foreach ($rp as $chave => $item){
+        $sql = sprintf("
+            SELECT
+                SUM(valor_liquidacao)::decimal AS liquidado
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao between '%s' and '%s'
+                AND valor_liquidacao::decimal > 0.0
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $liquidado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['liquidado'];
+        
+        $rp_liquidado = $liquidado;
+        $rp[$chave]['rp_liquidado'] = $rp_liquidado;
+    }
+    echo 'RP Não Processado Liquidado: ', number_format(array_sum(array_column($rp, 'rp_liquidado')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o RP Processado Cancelado
+    foreach ($rp as $chave => $item){
+        // Busca todos os cancelamentos
+        $sql = sprintf("
+            SELECT
+                nr_liquidacao, valor_liquidacao::decimal
+            FROM pad.liquidac
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_liquidacao between '%s' and '%s'
+                AND valor_liquidacao::decimal < 0.0
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $cancelamentos = pg_fetch_all($result, PGSQL_ASSOC);
+        
+        foreach ($cancelamentos as $item){
+            // Verifica se para chave_empenho+nr_liquidacao existe liquidação no ano
+            $sql1 = sprintf("
+                select count(remessa) as cancelamento
+                from pad.liquidac
+                where remessa = %d
+                and chave_empenho = '%s'
+                and nr_liquidacao = %d
+                AND data_liquidacao between '%s' and '%s'
+                AND valor_liquidacao::decimal > 0.0
+            ", $remessa, $chave, $item['nr_liquidacao'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
+            $result1 = pg_query($con, $sql1);
+            if(pg_num_rows($result) !== 0) {//se tem liquidações no ano, é cancelamento de processados
+                $rp[$chave]['processado_cancelado'] += (float) round($item['valor_liquidacao']*-1, 2);
+            }else{// senão, é cancelamento de não processado
+//                $rp[$chave]['nao_processado_cancelado'] += (float) round($item['valor_liquidacao']*-1, 2);
+            }
+//            $rp[$chave]['rp_cancelado'] += (float) round($item['valor_liquidacao']*-1, 2);
         }
-        $rp[$i] = array_merge($rp[$i], $row, ['nao_processado_pago' => $pago]);
-        $soma['nao_processado_pago'] += $pago;
     }
-
-    // Calcula os pagamentos de restos processados no período
-    foreach ($rp as $i => $row){
-        if($row['saldo_inicial_processado'] > 0.0){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
+    echo 'RP Processado Cancelado: ', number_format(array_sum(array_column($rp, 'processado_cancelado')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o RP Não Processado Cancelado e Total Cancelado
+    foreach ($rp as $chave => $item){
+        $sql = sprintf("
+            SELECT
+                SUM(valor_empenho*-1)::decimal AS empenhado
+            FROM pad.empenho
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_empenho between '%s' and '%s'
+                AND valor_empenho::decimal < 0.0
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
+//        echo $sql;exit();
         $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-        } else {
-            $pago = 0.0;
+        $empenhado = (float) pg_fetch_row($result, 0, PGSQL_ASSOC)['empenhado'];
+        
+        $nao_processado_cancelado = $empenhado;
+        $rp[$chave]['nao_processado_cancelado'] = $nao_processado_cancelado - $rp[$chave]['processado_cancelado'];
+        $rp[$chave]['rp_cancelado'] = $rp[$chave]['nao_processado_cancelado'] + $rp[$chave]['processado_cancelado'];
+    }
+    echo 'RP Não Processado Cancelado: ', number_format(array_sum(array_column($rp, 'nao_processado_cancelado')), 2, ',', '.'), PHP_EOL;
+    echo 'RP Total Cancelado: ', number_format(array_sum(array_column($rp, 'rp_cancelado')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula o RP Processado Pago
+    foreach ($rp as $chave => $item){
+        // Busca todos os pagamentos
+        $sql = sprintf("
+            SELECT
+                data_pagamento, valor_pagamento::decimal
+            FROM pad.pagament
+            WHERE remessa = %d
+                AND chave_empenho = '%s'
+                AND data_pagamento between '%s' and '%s'
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
+//        echo $sql;exit();
+        $result = pg_query($con, $sql);
+        $pagamentos = pg_fetch_all($result, PGSQL_ASSOC);
+        foreach ($pagamentos as $subitem){
+            // Verifica se para chave_empenho+nr_liquidacao existe liquidação no ano
+            $sql1 = sprintf("
+                select *
+                from pad.liquidac
+                where remessa = %d
+                and chave_empenho = '%s'
+                AND data_liquidacao between '%s' and '%s'
+                AND valor_liquidacao::decimal = %s
+            ", $remessa, $chave, $data_inicial->format('Y-m-d'), $subitem['data_pagamento'], $subitem['valor_pagamento']);
+//            echo $sql1, PHP_EOL;
+            $result1 = pg_query($con, $sql1);
+//            echo $chave, ' : ', $subitem['nr_liquidacao'], ' : ', pg_fetch_row($result1, 0, PGSQL_ASSOC)['liquidacao'], PHP_EOL;
+            if(pg_num_rows($result1) === 0) {//se tem liquidações no ano, é pagamento de processados
+                $rp[$chave]['processado_pago'] += (float) round($subitem['valor_pagamento'], 2);
+            }else{// senão, é pagamento de não processado
+                $rp[$chave]['nao_processado_pago'] += (float) round($subitem['valor_pagamento'], 2);
+            }
+            $rp[$chave]['rp_pago'] += (float) round($subitem['valor_pagamento'], 2);
         }
-        $rp[$i] = array_merge($rp[$i], $row, ['processado_pago' => $pago]);
-        $soma['processado_pago'] += $pago;
     }
-
-    // Calcula os pagamentos de restos no período
-    foreach ($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                AND DATA_PAGAMENTO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
-        $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-        $rp[$i] = array_merge($rp[$i], $row, ['rp_pago' => $pago]);
-        $soma['rp_pago'] += $pago;
+    echo 'RP Processado Pago: ', number_format(array_sum(array_column($rp, 'processado_pago')), 2, ',', '.'), PHP_EOL;
+    echo 'RP Não Processado Pago: ', number_format(array_sum(array_column($rp, 'nao_processado_pago')), 2, ',', '.'), PHP_EOL;
+    echo 'RP Total Pago: ', number_format(array_sum(array_column($rp, 'rp_pago')), 2, ',', '.'), PHP_EOL;
+    
+    // Calcula os saldos finais
+    foreach ($rp as $chave => $item){
+        $rp[$chave]['saldo_final_nao_processado'] = (float) round($item['saldo_inicial_nao_processado'] - $item['nao_processado_cancelado'] - $item['nao_processado_pago'], 2);
+        $rp[$chave]['saldo_final_processado'] = (float) round($item['saldo_inicial_processado'] - $item['processado_cancelado'] - $item['processado_pago'], 2);
+        $rp[$chave]['rp_saldo_final'] = (float) round($rp[$chave]['saldo_final_nao_processado'] + $rp[$chave]['saldo_final_processado'], 2);
     }
-
-    // Calcula os cancelamentos de restos não processados
-    foreach ($rp as $i => $row){
-        if($row['saldo_inicial_nao_processado'] > 0.0){
-            $sql = sprintf('SELECT SUM(VALOR_EMPENHO) AS EMPENHADO
-                            FROM PAD.EMPENHO
-                            WHERE REMESSA = %d
-                                    AND VALOR_EMPENHO< \'0.00\'::money
-                                    AND CHAVE_EMPENHO LIKE \'%s\'
-                                    AND DATA_EMPENHO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
-            $result = pg_query($con, $sql);
-            $empenhado = money_to_float(pg_fetch_all($result)[0]['empenhado']) * -1;
-        }else{
-            $empenhado = 0.0;
-        }
-
-        $rp[$i] = array_merge($rp[$i], $row, ['nao_processado_cancelado' => $empenhado]);
-        $soma['nao_processado_cancelado'] += $empenhado;
-    }
-
-    // Calcula os cancelamentos de restos processados
-    foreach ($rp as $i => $row){
-        if($row['saldo_inicial_processado'] > 0.0){
-            $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                            FROM PAD.LIQUIDAC
-                            WHERE REMESSA = %d
-                                    AND VALOR_LIQUIDACAO < \'0.00\'::money
-                                    AND CHAVE_EMPENHO LIKE \'%s\'
-                                    AND DATA_LIQUIDACAO BETWEEN \'%s\' AND \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'), $data_final->format('Y-m-d'));
-
-            $result = pg_query($con, $sql);
-            $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']) * -1;
-        }else{
-            $liquidado = 0.0;
-        }
-
-        $rp[$i] = array_merge($rp[$i], $row, ['processado_cancelado' => $liquidado]);
-        $soma['processado_cancelado'] += $liquidado;
-    }
-
-    // Calcula o saldo final não processado
-    foreach($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_EMPENHO) AS EMPENHADO
-                        FROM PAD.EMPENHO
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                --AND DATA_EMPENHO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $empenhado = money_to_float(pg_fetch_all($result)[0]['empenhado']);
-
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                --AND DATA_LIQUIDACAO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        // saldo rpnp
-        $saldo_rpnp = $empenhado - $liquidado;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_final_nao_processado' => $saldo_rpnp]);
-        $soma['saldo_final_nao_processado'] += $saldo_rpnp;
-    }
-
-    // Calcula o saldo final de restos processados
-    foreach ($rp as $i => $row){
-        $sql = sprintf('SELECT SUM(VALOR_PAGAMENTO) AS PAGO
-                        FROM PAD.PAGAMENT
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                --AND DATA_PAGAMENTO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $pago = money_to_float(pg_fetch_all($result)[0]['pago']);
-
-        $sql = sprintf('SELECT SUM(VALOR_LIQUIDACAO) AS LIQUIDADO
-                        FROM PAD.LIQUIDAC
-                        WHERE REMESSA = %d
-                                AND CHAVE_EMPENHO LIKE \'%s\'
-                                --AND DATA_LIQUIDACAO < \'%s\'', $remessa, $row['chave_empenho'], $data_inicial->format('Y-m-d'));
-        $result = pg_query($con, $sql);
-        $liquidado = money_to_float(pg_fetch_all($result)[0]['liquidado']);
-
-        // saldo rpp
-        $saldo_rpp = $liquidado - $pago;
-        $rp[$i] = array_merge($rp[$i], $row, ['saldo_final_processado' => $saldo_rpp]);
-        $soma['saldo_final_processado'] += $saldo_rpp;
-    }
-
-    // Calcula outros valores
-    foreach ($rp as $i => $row){
-
-        $rp_cancelado = round($row['nao_processado_cancelado'] + $row['processado_cancelado'], 2);
-        $rp[$i] = array_merge($rp[$i], $row, ['rp_cancelado' => $rp_cancelado]);
-        $soma['rp_cancelado'] += $rp_cancelado;
-
-        $rp_saldo_inicial = round($row['saldo_inicial_nao_processado'] + $row['saldo_inicial_processado'], 2);
-        $rp[$i] = array_merge($rp[$i], $row, ['rp_saldo_inicial' => $rp_saldo_inicial]);
-        $soma['rp_saldo_inicial'] += $rp_saldo_inicial;
-
-        $rp_saldo_final = round($row['saldo_final_nao_processado'] + $row['saldo_final_processado'], 2);
-        $rp[$i] = array_merge($rp[$i], $row, ['rp_saldo_final' => $rp_saldo_final]);
-        $soma['rp_saldo_final'] += $rp_saldo_final;
-    }
+    echo 'Saldo Final Não Processado: ', number_format(array_sum(array_column($rp, 'saldo_final_nao_processado')), 2, ',', '.'), PHP_EOL;
+    echo 'Saldo Final Processado: ', number_format(array_sum(array_column($rp, 'saldo_final_processado')), 2, ',', '.'), PHP_EOL;
+    echo 'Saldo Final Total: ', number_format(array_sum(array_column($rp, 'rp_saldo_final')), 2, ',', '.'), PHP_EOL;
+    
+    
+//    print_r($rp);
+//    exit();
 
     // Salva no banco de dados
+    $rp = array_values($rp);
+    printf('Salvando %d registros no banco de dados...', count($rp));
     if(!pg_query($con, 'BEGIN')) {
         $error = pg_last_error($con);
         trigger_error("Falha ao iniciar a transação para restos_pagar: {$error}", E_USER_ERROR);
     }
 
+//    $rp = array_values($rp);//Reseta as chaves do array para poder usar pg_insert
     foreach ($rp as $row){
         if(!pg_insert($con, 'pad.restos_pagar', $row)){
             $error = pg_last_error($con);
@@ -428,5 +424,4 @@ function monta_restos_pagar(int $remessa, PgSql\Connection $con) {
     }
 
     echo PHP_EOL;
-    print_r($soma);
 }

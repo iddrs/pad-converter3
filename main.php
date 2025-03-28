@@ -8,18 +8,18 @@ require 'vendor/autoload.php';
 
 echo "Conversão dos TXT do PAD.", PHP_EOL;
 echo "Digite os dados solicitados.", PHP_EOL;
-
+/*
 echo "Ano [AAAA]: ";
 fscanf(STDIN, "%d\n", $ano);
 echo "Mês [MM] (1 ~ 12): ";
 fscanf(STDIN, "%d\n", $mes);
 $mes = str_pad($mes, 2, '0', STR_PAD_LEFT);
-
+*/
 /*
  * Configurações
  */
-//$mes = '01';
-//$ano = '2024';
+//$mes = '02';
+//$ano = '2025';
 $layout_dir = './layout/2025.01.rev22/';
 //$source_dirs = [
 //    "Z:\\Abase\\ARQUIVOSPAD\\$ano\\MES$mes\\",
