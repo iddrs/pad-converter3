@@ -1,0 +1,20 @@
+{
+    "name": "everton3x/autoload-files-plugin",
+    "type": "composer-plugin",
+    "licence": "MIT",
+    "require": {
+        "composer-plugin-api": "^2.0",
+        "symfony/finder": "^5.0 || ^6.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Everton3x\\AutoloadFilesPlugin\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Everton3x\\AutoloadFilesPlugin\\AutoloadFilesPlugin"
+    }
+}

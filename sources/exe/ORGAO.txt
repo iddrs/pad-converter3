@@ -1,0 +1,49 @@
+87612826000190010120253108202510092025PREFEITURA MUNICIPAL INDEPENDENCIA                                              
+202202GABINETE DO PREFEITO E VICE PREFEITO                                            
+202203SECRETARIA DE ADMINISTRACAO                                                     
+202204SECRETARIA DA FAZENDA                                                           
+202205SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202206SECRETARIA DE OBRAS E VIACAO                                                    
+202207SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202208SECRETARIA MUNICIPAL DE SAUDE                                                   
+202209SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202210SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202211ENCARGOS ESPECIAIS                                                              
+202212FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+202302GABINETE DO PREFEITO E VICE PREFEITO                                            
+202303SECRETARIA DE ADMINISTRACAO                                                     
+202304SECRETARIA DA FAZENDA                                                           
+202305SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202306SECRETARIA DE OBRAS E VIACAO                                                    
+202307SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202308SECRETARIA MUNICIPAL DE SAUDE                                                   
+202309SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202310SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202311ENCARGOS ESPECIAIS                                                              
+202312FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+202402GABINETE DO PREFEITO E VICE PREFEITO                                            
+202403SECRETARIA DE ADMINISTRACAO                                                     
+202404SECRETARIA DA FAZENDA                                                           
+202405SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202406SECRETARIA DE OBRAS E VIACAO                                                    
+202407SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202408SECRETARIA MUNICIPAL DE SAUDE                                                   
+202409SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202410SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202411ENCARGOS ESPECIAIS                                                              
+202412FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+202413SECRETARIA DE PLANEJAMENTO INDUSTRIA COMERCIO E SERVICOS                        
+202450FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+202502GABINETE DO PREFEITO E VICE PREFEITO                                            
+202503SECRETARIA DE ADMINISTRACAO                                                     
+202504SECRETARIA DA FAZENDA                                                           
+202505SECRETARIA DE EDUCACAO CULTURA DESPORTO E TURISMO                               
+202506SECRETARIA DE OBRAS E VIACAO                                                    
+202507SECRETARIA DE SERVICOS URBANOS E TRANSITO                                       
+202508SECRETARIA MUNICIPAL DE SAUDE                                                   
+202509SECRETARIA DA ASSISTENCIA SOCIAL                                                
+202510SECRETARIA DA AGRICULTURA E ABASTECIMENTO                                       
+202511ENCARGOS ESPECIAIS                                                              
+202513SECRETARIA DE PLANEJAMENTO INDUSTRIA COMERCIO E SERVICOS                        
+202550FUNDO DE PREVIDENCIA DO SERVIDOR MUNICIPAL - FPSM                               
+FINALIZADOR0000000047

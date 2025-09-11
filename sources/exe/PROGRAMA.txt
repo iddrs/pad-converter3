@@ -1,0 +1,86 @@
+87612826000190010120253108202510092025PREFEITURA MUNICIPAL INDEPENDENCIA                                              
+20220000Encargos Especiais                                                              
+20220001Apoio Administrativo                                                            
+20220002Educacao e Cidadania                                                            
+20220003Promocao da Cultura Desporto e Lazer Comunitarios                               
+20220004Desenvolvimento Economico e Producao Agricola                                   
+20220005Programa de Gestao da Saude                                                     
+20220006Programa de Atencao Basica em Saude                                             
+20220007Programa de Vigilancia em Saude                                                 
+20220008Programa de acesso aos servicos de saude de media e alta complexidade hospitalar
+20220009Programa de assistencia farmaceutica                                            
+20220010Servicos Urbanos                                                                
+20220011Assistencia Protecao e Inclusao Social                                          
+20220012Saneamento Basico                                                               
+20220013Gestao Protecao e Recuperacao do Meio Ambiente                                  
+20220014Seguranca e Defesa Civil                                                        
+20220015Acao Legislativa                                                                
+20220016Habitacao Urbana e Rural                                                        
+20220017Infraestrutura Urbana e Rural                                                   
+20220018Transito Municipal                                                              
+20220020Previdencia do Servidor Estatutario                                             
+20220021Incentivo para as Industrias Comercio e Prestadoras de Servico                  
+20230000Encargos Especiais                                                              
+20230001Apoio Administrativo                                                            
+20230002Educacao e Cidadania                                                            
+20230003Promocao da Cultura Desporto e Lazer Comunitarios                               
+20230004Desenvolvimento Economico e Producao Agricola                                   
+20230005Programa de Gestao da Saude                                                     
+20230006Programa de Atencao Basica em Saude                                             
+20230007Programa de Vigilancia em Saude                                                 
+20230008Programa de acesso aos servicos de saude de media e alta complexidade hospitalar
+20230009Programa de assistencia farmaceutica                                            
+20230010Servicos Urbanos                                                                
+20230011Assistencia Protecao e Inclusao Social                                          
+20230012Saneamento Basico                                                               
+20230013Gestao Protecao e Recuperacao do Meio Ambiente                                  
+20230014Seguranca e Defesa Civil                                                        
+20230015Acao Legislativa                                                                
+20230016Habitacao Urbana e Rural                                                        
+20230017Infraestrutura Urbana e Rural                                                   
+20230018Transito Municipal                                                              
+20230020Previdencia do Servidor Estatutario                                             
+20230021Incentivo para as Industrias Comercio e Prestadoras de Servico                  
+20240000Encargos Especiais                                                              
+20240001Apoio Administrativo                                                            
+20240002Educacao e Cidadania                                                            
+20240003Promocao da Cultura Desporto e Lazer Comunitarios                               
+20240004Desenvolvimento Economico e Producao Agricola                                   
+20240005Programa de Gestao da Saude                                                     
+20240006Programa de Atencao Basica em Saude                                             
+20240007Programa de Vigilancia em Saude                                                 
+20240008Programa de acesso aos servicos de saude de media e alta complexidade hospitalar
+20240009Programa de assistencia farmaceutica                                            
+20240010Servicos Urbanos                                                                
+20240011Assistencia Protecao e Inclusao Social                                          
+20240012Saneamento Basico                                                               
+20240013Gestao Protecao e Recuperacao do Meio Ambiente                                  
+20240014Seguranca e Defesa Civil                                                        
+20240015Acao Legislativa                                                                
+20240016Habitacao Urbana e Rural                                                        
+20240017Infraestrutura Urbana e Rural                                                   
+20240018Transito Municipal                                                              
+20240020Previdencia do Servidor Estatutario                                             
+20240021Incentivo para as Industrias Comercio e Prestadoras de Servico                  
+20250000ENCARGOS ESPECIAIS                                                              
+20250001APOIO ADMINISTRATIVO                                                            
+20250002EDUCACAO E CIDADANIA                                                            
+20250003PROMOCAO DA CULTURA DESPORTO E LAZER COMUNITARIOS                               
+20250004DESENVOLVIMENTO ECONOMICO E PRODUCAO AGRICOLA                                   
+20250005PROGRAMA DE GESTAO DA SAUDE                                                     
+20250006PROGRAMA DE ATENCAO BASICA EM SAUDE                                             
+20250007PROGRAMA DE VIGILANCIA EM SAUDE                                                 
+20250008PROGRAMA DE ACESSO AOS SERVICOS DE SAUDE DE MEDIA E ALTA COMPLEXIDADE HOSPITALAR
+20250009PROGRAMA DE ASSISTENCIA FARMACEUTICA                                            
+20250010SERVICOS URBANOS                                                                
+20250011ASSISTENCIA PROTECAO E INCLUSAO SOCIAL                                          
+20250012SANEAMENTO BASICO                                                               
+20250013GESTAO PROTECAO E RECUPERACAO DO MEIO AMBIENTE                                  
+20250014SEGURANCA E DEFESA CIVIL                                                        
+20250015ACAO LEGISLATIVA                                                                
+20250016HABITACAO URBANA E RURAL                                                        
+20250017INFRAESTRUTURA URBANA E RURAL                                                   
+20250018TRANSITO MUNICIPAL                                                              
+20250020PREVIDENCIA DO SERVIDOR ESTATUTARIO                                             
+20250021INCENTIVO PARA AS INDUSTRIAS COMERCIO E PRESTADORAS DE SERVICO                  
+FINALIZADOR0000000084

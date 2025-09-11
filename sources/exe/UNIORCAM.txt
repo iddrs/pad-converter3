@@ -1,0 +1,142 @@
+87612826000190010120253108202510092025PREFEITURA MUNICIPAL INDEPENDENCIA                                              
+20220201GABINETE DO PREFEITO E VICE-PREFEITO                                            0187612826000190
+20220202FUNDICA - FUNDO DA CRIANCA E ADOLESCENTE                                        0187612826000190
+20220203UNIDADES DE ASSESSORAMENTO                                                      0187612826000190
+20220301SECRETARIA DE ADMINISTRACAO                                                     0187612826000190
+20220401SECRETARIA DA FAZENDA                                                           0187612826000190
+20220501SMECDT SETOR ADMINISTRATIVO                                                     0387612826000190
+20220502SETOR DE EDUCACAO BASICA                                                        0387612826000190
+20220503SETOR DE CULTURA                                                                0187612826000190
+20220504SETOR DE DESPORTO                                                               0187612826000190
+20220505SETOR DE TURISMO                                                                0187612826000190
+20220601SMOV SETOR ADMINISTRATIVO                                                       0187612826000190
+20220602SETOR DE OBRAS                                                                  0187612826000190
+20220603SETOR DE ESTRADAS                                                               0187612826000190
+20220604SETOR DE TRANSPORTE COLETIVO                                                    0187612826000190
+20220701SMSUT URBANOS SETOR ADMINISTRATIVO                                              0187612826000190
+20220702SETOR DE SERVICOS URBANOS                                                       0187612826000190
+20220703SETOR DE TRANSITO                                                               0187612826000190
+20220801FUNDO MUNICIPAL DE SAUDE                                                        0487612826000190
+20220802SECRETARIA DE SAUDE - RECURSO LIVRE                                             0487612826000190
+20220901SMAS SETOR ADMINISTRATIVO                                                       0187612826000190
+20220902FMAS - FUNDO DE ASSISTENCIA SOCIAL - FMAS F ESTADUAL                            0187612826000190
+20220903FMHIS - FUNDO DE HABITACAO                                                      0187612826000190
+20220904CONSELHO TUTELAR                                                                0187612826000190
+20221001SMAB SETOR ADMINISTRATIVO                                                       0187612826000190
+20221002SETOR DE AGRICULTURA                                                            0187612826000190
+20221003SETOR DE INDUSTRIA E COMERCIO                                                   0187612826000190
+20221004SETOR DE SANEAMENTO                                                             0187612826000190
+20221005FUNDEC - FUNDO DE DEFESA CIVIL                                                  0187612826000190
+20221006FMDMA - FUNDO DO MEIO AMBIENTE                                                  0187612826000190
+20221101ENCARGOS ESPECIAIS                                                              0187612826000190
+20221102UNIDADE DE RESERVA DE CONTINGENCIA                                              0187612826000190
+20221201FPSM - RPPS                                                                     0587612826000190
+20230201GABINETE DO PREFEITO E VICE-PREFEITO                                            0187612826000190
+20230202FUNDICA - FUNDO DA CRIANCA E ADOLESCENTE                                        0187612826000190
+20230203UNIDADES DE ASSESSORAMENTO                                                      0187612826000190
+20230301SECRETARIA DE ADMINISTRACAO                                                     0187612826000190
+20230302SECRETARIA DE PLANEJAMENTO INDUSTRIA COMERCIO E SERVICOS                        0187612826000190
+20230401SECRETARIA DA FAZENDA                                                           0187612826000190
+20230501SMECDT SETOR ADMINISTRATIVO                                                     0387612826000190
+20230502SETOR DE EDUCACAO BASICA                                                        0387612826000190
+20230503SETOR DE CULTURA                                                                0187612826000190
+20230504SETOR DE DESPORTO                                                               0187612826000190
+20230505SETOR DE TURISMO                                                                0187612826000190
+20230601SMOV SETOR ADMINISTRATIVO                                                       0187612826000190
+20230602SETOR DE OBRAS                                                                  0187612826000190
+20230603SETOR DE ESTRADAS                                                               0187612826000190
+20230604SETOR DE TRANSPORTE COLETIVO                                                    0187612826000190
+20230701SMSUT URBANOS SETOR ADMINISTRATIVO                                              0187612826000190
+20230702SETOR DE SERVICOS URBANOS                                                       0187612826000190
+20230703SETOR DE TRANSITO                                                               0187612826000190
+20230801FUNDO MUNICIPAL DE SAUDE                                                        0487612826000190
+20230802SECRETARIA DE SAUDE - RECURSO LIVRE                                             0487612826000190
+20230901SMAS SETOR ADMINISTRATIVO                                                       0187612826000190
+20230902FMAS - FUNDO DE ASSISTENCIA SOCIAL - FMAS F ESTADUAL                            0187612826000190
+20230903FMHIS - FUNDO DE HABITACAO                                                      0187612826000190
+20230904CONSELHO TUTELAR                                                                0187612826000190
+20231001SMAB SETOR ADMINISTRATIVO                                                       0187612826000190
+20231002SETOR DE AGRICULTURA                                                            0187612826000190
+20231003SETOR DE INDUSTRIA E COMERCIO                                                   0187612826000190
+20231004SETOR DE SANEAMENTO                                                             0187612826000190
+20231005FUNDEC - FUNDO DE DEFESA CIVIL                                                  0187612826000190
+20231006FMDMA - FUNDO DO MEIO AMBIENTE                                                  0187612826000190
+20231101ENCARGOS ESPECIAIS                                                              0187612826000190
+20231102UNIDADE DE RESERVA DE CONTINGENCIA                                              0187612826000190
+20231201FPSM - RPPS                                                                     0587612826000190
+20240201GABINETE DO PREFEITO E VICE-PREFEITO                                            0187612826000190
+20240202FUNDICA - FUNDO DA CRIANCA E ADOLESCENTE                                        0187612826000190
+20240203UNIDADES DE ASSESSORAMENTO                                                      0187612826000190
+20240301SECRETARIA DE ADMINISTRACAO                                                     0187612826000190
+20240302SECRETARIA DE PLANEJAMENTO INDUSTRIA COMERCIO E SERVICOS                        0187612826000190
+20240401SECRETARIA DA FAZENDA                                                           0187612826000190
+20240501SMECDT SETOR ADMINISTRATIVO                                                     0387612826000190
+20240502SETOR DE EDUCACAO BASICA                                                        0387612826000190
+20240503SETOR DE CULTURA                                                                0387612826000190
+20240504SETOR DE DESPORTO                                                               0387612826000190
+20240505SETOR DE TURISMO                                                                0387612826000190
+20240601SMOV SETOR ADMINISTRATIVO                                                       0187612826000190
+20240602SETOR DE OBRAS                                                                  0187612826000190
+20240603SETOR DE ESTRADAS                                                               0187612826000190
+20240604SETOR DE TRANSPORTE COLETIVO                                                    0187612826000190
+20240701SMSUT URBANOS SETOR ADMINISTRATIVO                                              0187612826000190
+20240702SETOR DE SERVICOS URBANOS                                                       0187612826000190
+20240703SETOR DE TRANSITO                                                               0187612826000190
+20240801FUNDO MUNICIPAL DE SAUDE                                                        0487612826000190
+20240901SMAS SETOR ADMINISTRATIVO                                                       0187612826000190
+20240902FMAS - FUNDO DE ASSISTENCIA SOCIAL                                              0187612826000190
+20240903FMHIS - FUNDO DE HABITACAO                                                      0187612826000190
+20240904CONSELHO TUTELAR                                                                0187612826000190
+20241001SMAB SETOR ADMINISTRATIVO                                                       0187612826000190
+20241002SETOR DE AGRICULTURA                                                            0187612826000190
+20241003SETOR DE INDUSTRIA E COMERCIO                                                   0187612826000190
+20241004SETOR DE SANEAMENTO                                                             0187612826000190
+20241005FUNDEC - FUNDO DE DEFESA CIVIL                                                  0187612826000190
+20241006FMDMA - FUNDO DO MEIO AMBIENTE                                                  0187612826000190
+20241101ENCARGOS ESPECIAIS                                                              0187612826000190
+20241102UNIDADE DE RESERVA DE CONTINGENCIA                                              0187612826000190
+20241109RESERVAS                                                                        0187612826000190
+20241201FPSM - RPPS                                                                     0587612826000190
+20241301SETOR DE PLANEJAMENTO                                                           0187612826000190
+20241302SETOR DE INDUSTRIA COMERCIO E SERVICOS                                          0187612826000190
+20245001FPSM - ADMINISTRACAO                                                            0587612826000190
+20245002FPSM - BENEFICIOS                                                               0587612826000190
+20245009FPSM - RESERVAS                                                                 0587612826000190
+20250201GABINETE DO PREFEITO E VICE-PREFEITO                                            0187612826000190
+20250202FUNDICA - FUNDO DA CRIANCA E ADOLESCENTE                                        0187612826000190
+20250203UNIDADES DE ASSESSORAMENTO                                                      0187612826000190
+20250301SECRETARIA DE ADMINISTRACAO                                                     0187612826000190
+20250302SECRETARIA DE PLANEJAMENTO INDUSTRIA COMERCIO E SERVICOS                        0187612826000190
+20250401SECRETARIA DA FAZENDA                                                           0187612826000190
+20250501SMECDT SETOR ADMINISTRATIVO                                                     0387612826000190
+20250502SETOR DE EDUCACAO BASICA                                                        0387612826000190
+20250503SETOR DE CULTURA                                                                0387612826000190
+20250504SETOR DE DESPORTO                                                               0387612826000190
+20250505SETOR DE TURISMO                                                                0387612826000190
+20250601SMOV SETOR ADMINISTRATIVO                                                       0187612826000190
+20250602SETOR DE OBRAS                                                                  0187612826000190
+20250603SETOR DE ESTRADAS                                                               0187612826000190
+20250604SETOR DE TRANSPORTE COLETIVO                                                    0187612826000190
+20250701SMSUT URBANOS SETOR ADMINISTRATIVO                                              0187612826000190
+20250702SETOR DE SERVICOS URBANOS                                                       0187612826000190
+20250703SETOR DE TRANSITO                                                               0187612826000190
+20250801FUNDO MUNICIPAL DE SAUDE                                                        0487612826000190
+20250901SMAS SETOR ADMINISTRATIVO                                                       0187612826000190
+20250902FMAS - FUNDO DE ASSISTENCIA SOCIAL                                              0187612826000190
+20250903FMHIS - FUNDO DE HABITACAO                                                      0187612826000190
+20250904CONSELHO TUTELAR                                                                0187612826000190
+20251001SMAB SETOR ADMINISTRATIVO                                                       0187612826000190
+20251002SETOR DE AGRICULTURA                                                            0187612826000190
+20251003SETOR DE INDUSTRIA E COMERCIO                                                   0187612826000190
+20251004SETOR DE SANEAMENTO                                                             0187612826000190
+20251005FUNDEC - FUNDO DE DEFESA CIVIL                                                  0187612826000190
+20251006FMDMA - FUNDO DO MEIO AMBIENTE                                                  0187612826000190
+20251101ENCARGOS ESPECIAIS                                                              0187612826000190
+20251102UNIDADE DE RESERVA DE CONTINGENCIA                                              0187612826000190
+20251109RESERVAS                                                                        0187612826000190
+20251301SETOR DE PLANEJAMENTO                                                           0187612826000190
+20251302SETOR DE INDUSTRIA COMERCIO E SERVICOS                                          0187612826000190
+20255001FPSM - ADMINISTRACAO                                                            0587612826000190
+20255002FPSM - BENEFICIOS                                                               0587612826000190
+20255009FPSM - RESERVAS                                                                 0587612826000190
+FINALIZADOR0000000140

@@ -1,0 +1,441 @@
+12292535000162010120252802202519032025CAMARA DE VEREADORES DE INDEPENDENCIA-RS                                        
+2022031Acao Legislativa                                                                
+2022032Controle Externo                                                                
+2022061Acao Judiciaria                                                                 
+2022062Defesa do Interesse Publico no Processo Judiciario                              
+2022091Defesa da Ordem Juridica                                                        
+2022092Representacao Judicial e Extrajudicial                                          
+2022121Planejamento e Orcamento                                                        
+2022122Administracao Geral                                                             
+2022123Administracao Financeira                                                        
+2022124Controle Interno                                                                
+2022125Normatizacao e Fiscalizacao                                                     
+2022126Tecnologia da Informacao                                                        
+2022127Ordenamento Territorial                                                         
+2022128Formacao de Recursos Humanos                                                    
+2022129Administracao de Receitas                                                       
+2022130Administracao de Concessoes                                                     
+2022131Comunicacao Social                                                              
+2022151Defesa Aerea                                                                    
+2022152Defesa Naval                                                                    
+2022153Defesa Terrestre                                                                
+2022181Policiamento                                                                    
+2022182Defesa Civil                                                                    
+2022183Informacao e Inteligencia                                                       
+2022211Relacoes Diplomaticas                                                           
+2022212Cooperacao Internacional                                                        
+2022241Assistencia ao Idoso                                                            
+2022242Assistencia ao Portador de Deficiencia                                          
+2022243Assistencia a Crianca e ao Adolescente                                          
+2022244Assistencia Comunitaria                                                         
+2022271Previdencia Basica                                                              
+2022272Previdencia do Regime Estatutario                                               
+2022273Previdencia Complementar                                                        
+2022274Previdencia Especial                                                            
+2022301Atencao Basica                                                                  
+2022302Assistencia Hospitalar e Ambulatorial                                           
+2022303Suporte Profilatico e Terapeutico                                               
+2022304Vigilancia Sanitaria                                                            
+2022305Vigilancia Epidemiologica                                                       
+2022306Alimentacao e Nutricao                                                          
+2022331Protecao e Beneficios ao Trabalhador                                            
+2022332Relacoes de Trabalho                                                            
+2022333Empregabilidade                                                                 
+2022334Fomento ao Trabalho                                                             
+2022361Ensino Fundamental                                                              
+2022362Ensino Medio                                                                    
+2022363Ensino Profissional                                                             
+2022364Ensino Superior                                                                 
+2022365Educacao Infantil                                                               
+2022366Educacao de Jovens e Adultos                                                    
+2022367EDUCACAO ESPECIAL                                                               
+2022391Patrimonio Historico, Artistico e Arqueologico                                  
+2022392Difusao Cultural                                                                
+2022421Custodia e Reintegracao Social                                                  
+2022422Direitos Individuais, Coletivos e Difusos                                       
+2022423Assistencia aos Povos Indigenas                                                 
+2022451Infra-Estrutura Urbana                                                          
+2022452Servicos Urbanos                                                                
+2022453Transportes Coletivos Urbanos                                                   
+2022481Habitacao Rural                                                                 
+2022482Habitacao Urbana                                                                
+2022511Saneamento Basico Rural                                                         
+2022512Saneamento Basico Urbano                                                        
+2022541Preservacao e Conservacao Ambiental                                             
+2022542Controle Ambiental                                                              
+2022543Recuperacao de Areas Degradadas                                                 
+2022544Recursos Hidricos                                                               
+2022545Meteorologia                                                                    
+2022571Desenvolvimento Cientifico                                                      
+2022572Desenvolvimento Tecnologico e Engenharia                                        
+2022573Difusao do Conhecimento Cientifico e Tecnologico                                
+2022605Abastecimento                                                                   
+2022606Extensao Rural                                                                  
+2022607Irrigacao                                                                       
+2022608PROMOCAO DA PRODUCAO AGROPECUARIA                                               
+2022609DEFESA AGROPECUARIA                                                             
+2022631Reforma Agraria                                                                 
+2022632Colonizacao                                                                     
+2022661Promocao Industrial                                                             
+2022662Producao Industrial                                                             
+2022663Mineracao                                                                       
+2022664Propriedade Industrial                                                          
+2022665Normalizacao e Qualidade                                                        
+2022691Promocao Comercial                                                              
+2022692Comercializacao                                                                 
+2022693Comercio Exterior                                                               
+2022694Servicos Financeiros                                                            
+2022695Turismo                                                                         
+2022721Comunicacoes Postais                                                            
+2022722Telecomunicacoes                                                                
+2022751Conservacao de Energia                                                          
+2022752Energia Eletrica                                                                
+2022753Petroleo                                                                        
+2022754Alcool                                                                          
+2022781Transporte Aereo                                                                
+2022782Transporte Rodoviario                                                           
+2022783Transporte Ferroviario                                                          
+2022784Transporte Hidroviario                                                          
+2022785TRANSPORTES ESPECIAIS                                                           
+2022811Desporto de Rendimento                                                          
+2022812Desporto Comunitario                                                            
+2022813Lazer                                                                           
+2022841Refinanciamento da Divida Interna                                               
+2022842Refinanciamento da Divida Externa                                               
+2022843Servico da Divida Interna                                                       
+2022844Servico da Divida Externa                                                       
+2022845Outras Transferencias                                                           
+2022846Outros Encargos Especiais                                                       
+2022997RESERVA DO RPPS                                                                 
+2022999RESERVA DE CONTINGENCIA                                                         
+2023031Acao Legislativa                                                                
+2023032Controle Externo                                                                
+2023061Acao Judiciaria                                                                 
+2023062Defesa do Interesse Publico no Processo Judiciario                              
+2023091Defesa da Ordem Juridica                                                        
+2023092Representacao Judicial e Extrajudicial                                          
+2023121Planejamento e Orcamento                                                        
+2023122Administracao Geral                                                             
+2023123Administracao Financeira                                                        
+2023124Controle Interno                                                                
+2023125Normatizacao e Fiscalizacao                                                     
+2023126Tecnologia da Informacao                                                        
+2023127Ordenamento Territorial                                                         
+2023128Formacao de Recursos Humanos                                                    
+2023129Administracao de Receitas                                                       
+2023130Administracao de Concessoes                                                     
+2023131Comunicacao Social                                                              
+2023151Defesa Aerea                                                                    
+2023152Defesa Naval                                                                    
+2023153Defesa Terrestre                                                                
+2023181Policiamento                                                                    
+2023182Defesa Civil                                                                    
+2023183Informacao e Inteligencia                                                       
+2023211Relacoes Diplomaticas                                                           
+2023212Cooperacao Internacional                                                        
+2023241Assistencia ao Idoso                                                            
+2023242Assistencia ao Portador de Deficiencia                                          
+2023243Assistencia a Crianca e ao Adolescente                                          
+2023244Assistencia Comunitaria                                                         
+2023271Previdencia Basica                                                              
+2023272Previdencia do Regime Estatutario                                               
+2023273Previdencia Complementar                                                        
+2023274Previdencia Especial                                                            
+2023301Atencao Basica                                                                  
+2023302Assistencia Hospitalar e Ambulatorial                                           
+2023303Suporte Profilatico e Terapeutico                                               
+2023304Vigilancia Sanitaria                                                            
+2023305Vigilancia Epidemiologica                                                       
+2023306Alimentacao e Nutricao                                                          
+2023331Protecao e Beneficios ao Trabalhador                                            
+2023332Relacoes de Trabalho                                                            
+2023333Empregabilidade                                                                 
+2023334Fomento ao Trabalho                                                             
+2023361Ensino Fundamental                                                              
+2023362Ensino Medio                                                                    
+2023363Ensino Profissional                                                             
+2023364Ensino Superior                                                                 
+2023365Educacao Infantil                                                               
+2023366Educacao de Jovens e Adultos                                                    
+2023367EDUCACAO ESPECIAL                                                               
+2023391Patrimonio Historico, Artistico e Arqueologico                                  
+2023392Difusao Cultural                                                                
+2023421Custodia e Reintegracao Social                                                  
+2023422Direitos Individuais, Coletivos e Difusos                                       
+2023423Assistencia aos Povos Indigenas                                                 
+2023451Infra-Estrutura Urbana                                                          
+2023452Servicos Urbanos                                                                
+2023453Transportes Coletivos Urbanos                                                   
+2023481Habitacao Rural                                                                 
+2023482Habitacao Urbana                                                                
+2023511Saneamento Basico Rural                                                         
+2023512Saneamento Basico Urbano                                                        
+2023541Preservacao e Conservacao Ambiental                                             
+2023542Controle Ambiental                                                              
+2023543Recuperacao de Areas Degradadas                                                 
+2023544Recursos Hidricos                                                               
+2023545Meteorologia                                                                    
+2023571Desenvolvimento Cientifico                                                      
+2023572Desenvolvimento Tecnologico e Engenharia                                        
+2023573Difusao do Conhecimento Cientifico e Tecnologico                                
+2023605Abastecimento                                                                   
+2023606Extensao Rural                                                                  
+2023607Irrigacao                                                                       
+2023608PROMOCAO DA PRODUCAO AGROPECUARIA                                               
+2023609DEFESA AGROPECUARIA                                                             
+2023631Reforma Agraria                                                                 
+2023632Colonizacao                                                                     
+2023661Promocao Industrial                                                             
+2023662Producao Industrial                                                             
+2023663Mineracao                                                                       
+2023664Propriedade Industrial                                                          
+2023665Normalizacao e Qualidade                                                        
+2023691Promocao Comercial                                                              
+2023692Comercializacao                                                                 
+2023693Comercio Exterior                                                               
+2023694Servicos Financeiros                                                            
+2023695Turismo                                                                         
+2023721Comunicacoes Postais                                                            
+2023722Telecomunicacoes                                                                
+2023751Conservacao de Energia                                                          
+2023752Energia Eletrica                                                                
+2023753Petroleo                                                                        
+2023754Alcool                                                                          
+2023781Transporte Aereo                                                                
+2023782Transporte Rodoviario                                                           
+2023783Transporte Ferroviario                                                          
+2023784Transporte Hidroviario                                                          
+2023785TRANSPORTES ESPECIAIS                                                           
+2023811Desporto de Rendimento                                                          
+2023812Desporto Comunitario                                                            
+2023813Lazer                                                                           
+2023841Refinanciamento da Divida Interna                                               
+2023842Refinanciamento da Divida Externa                                               
+2023843Servico da Divida Interna                                                       
+2023844Servico da Divida Externa                                                       
+2023845Outras Transferencias                                                           
+2023846Outros Encargos Especiais                                                       
+2023997RESERVA DO RPPS                                                                 
+2023999RESERVA DE CONTINGENCIA                                                         
+2023368EDUCACAO BASICA                                                                 
+2024031Acao Legislativa                                                                
+2024032Controle Externo                                                                
+2024061Acao Judiciaria                                                                 
+2024062Defesa do Interesse Publico no Processo Judiciario                              
+2024091Defesa da Ordem Juridica                                                        
+2024092Representacao Judicial e Extrajudicial                                          
+2024121Planejamento e Orcamento                                                        
+2024122Administracao Geral                                                             
+2024123Administracao Financeira                                                        
+2024124Controle Interno                                                                
+2024125Normatizacao e Fiscalizacao                                                     
+2024126Tecnologia da Informacao                                                        
+2024127Ordenamento Territorial                                                         
+2024128Formacao de Recursos Humanos                                                    
+2024129Administracao de Receitas                                                       
+2024130Administracao de Concessoes                                                     
+2024131Comunicacao Social                                                              
+2024151Defesa Aerea                                                                    
+2024152Defesa Naval                                                                    
+2024153Defesa Terrestre                                                                
+2024181Policiamento                                                                    
+2024182Defesa Civil                                                                    
+2024183Informacao e Inteligencia                                                       
+2024211Relacoes Diplomaticas                                                           
+2024212Cooperacao Internacional                                                        
+2024241Assistencia ao Idoso                                                            
+2024242Assistencia ao Portador de Deficiencia                                          
+2024243Assistencia a Crianca e ao Adolescente                                          
+2024244Assistencia Comunitaria                                                         
+2024271Previdencia Basica                                                              
+2024272Previdencia do Regime Estatutario                                               
+2024273Previdencia Complementar                                                        
+2024274Previdencia Especial                                                            
+2024301Atencao Basica                                                                  
+2024302Assistencia Hospitalar e Ambulatorial                                           
+2024303Suporte Profilatico e Terapeutico                                               
+2024304Vigilancia Sanitaria                                                            
+2024305Vigilancia Epidemiologica                                                       
+2024306Alimentacao e Nutricao                                                          
+2024331Protecao e Beneficios ao Trabalhador                                            
+2024332Relacoes de Trabalho                                                            
+2024333Empregabilidade                                                                 
+2024334Fomento ao Trabalho                                                             
+2024361Ensino Fundamental                                                              
+2024362Ensino Medio                                                                    
+2024363Ensino Profissional                                                             
+2024364Ensino Superior                                                                 
+2024365Educacao Infantil                                                               
+2024366Educacao de Jovens e Adultos                                                    
+2024367EDUCACAO ESPECIAL                                                               
+2024368EDUCACAO BASICA                                                                 
+2024391Patrimonio Historico, Artistico e Arqueologico                                  
+2024392Difusao Cultural                                                                
+2024421Custodia e Reintegracao Social                                                  
+2024422Direitos Individuais, Coletivos e Difusos                                       
+2024423Assistencia aos Povos Indigenas                                                 
+2024451Infra-Estrutura Urbana                                                          
+2024452Servicos Urbanos                                                                
+2024453Transportes Coletivos Urbanos                                                   
+2024481Habitacao Rural                                                                 
+2024482Habitacao Urbana                                                                
+2024511Saneamento Basico Rural                                                         
+2024512Saneamento Basico Urbano                                                        
+2024541Preservacao e Conservacao Ambiental                                             
+2024542Controle Ambiental                                                              
+2024543Recuperacao de Areas Degradadas                                                 
+2024544Recursos Hidricos                                                               
+2024545Meteorologia                                                                    
+2024571Desenvolvimento Cientifico                                                      
+2024572Desenvolvimento Tecnologico e Engenharia                                        
+2024573Difusao do Conhecimento Cientifico e Tecnologico                                
+2024605Abastecimento                                                                   
+2024606Extensao Rural                                                                  
+2024607Irrigacao                                                                       
+2024608PROMOCAO DA PRODUCAO AGROPECUARIA                                               
+2024609DEFESA AGROPECUARIA                                                             
+2024631Reforma Agraria                                                                 
+2024632Colonizacao                                                                     
+2024661Promocao Industrial                                                             
+2024662Producao Industrial                                                             
+2024663Mineracao                                                                       
+2024664Propriedade Industrial                                                          
+2024665Normalizacao e Qualidade                                                        
+2024691Promocao Comercial                                                              
+2024692Comercializacao                                                                 
+2024693Comercio Exterior                                                               
+2024694Servicos Financeiros                                                            
+2024695Turismo                                                                         
+2024721Comunicacoes Postais                                                            
+2024722Telecomunicacoes                                                                
+2024751Conservacao de Energia                                                          
+2024752Energia Eletrica                                                                
+2024753Petroleo                                                                        
+2024754Alcool                                                                          
+2024781Transporte Aereo                                                                
+2024782Transporte Rodoviario                                                           
+2024783Transporte Ferroviario                                                          
+2024784Transporte Hidroviario                                                          
+2024785TRANSPORTES ESPECIAIS                                                           
+2024811Desporto de Rendimento                                                          
+2024812Desporto Comunitario                                                            
+2024813Lazer                                                                           
+2024841Refinanciamento da Divida Interna                                               
+2024842Refinanciamento da Divida Externa                                               
+2024843Servico da Divida Interna                                                       
+2024844Servico da Divida Externa                                                       
+2024845Outras Transferencias                                                           
+2024846Outros Encargos Especiais                                                       
+2024997RESERVA DO RPPS                                                                 
+2024999RESERVA DE CONTINGENCIA                                                         
+2025031Acao Legislativa                                                                
+2025032Controle Externo                                                                
+2025061Acao Judiciaria                                                                 
+2025062Defesa do Interesse Publico no Processo Judiciario                              
+2025091Defesa da Ordem Juridica                                                        
+2025092Representacao Judicial e Extrajudicial                                          
+2025121Planejamento e Orcamento                                                        
+2025122Administracao Geral                                                             
+2025123Administracao Financeira                                                        
+2025124Controle Interno                                                                
+2025125Normatizacao e Fiscalizacao                                                     
+2025126Tecnologia da Informacao                                                        
+2025127Ordenamento Territorial                                                         
+2025128Formacao de Recursos Humanos                                                    
+2025129Administracao de Receitas                                                       
+2025130Administracao de Concessoes                                                     
+2025131Comunicacao Social                                                              
+2025151Defesa Aerea                                                                    
+2025152Defesa Naval                                                                    
+2025153Defesa Terrestre                                                                
+2025181Policiamento                                                                    
+2025182Defesa Civil                                                                    
+2025183Informacao e Inteligencia                                                       
+2025211Relacoes Diplomaticas                                                           
+2025212Cooperacao Internacional                                                        
+2025241Assistencia ao Idoso                                                            
+2025242Assistencia ao Portador de Deficiencia                                          
+2025243Assistencia a Crianca e ao Adolescente                                          
+2025244Assistencia Comunitaria                                                         
+2025271Previdencia Basica                                                              
+2025272Previdencia do Regime Estatutario                                               
+2025273Previdencia Complementar                                                        
+2025274Previdencia Especial                                                            
+2025301Atencao Basica                                                                  
+2025302Assistencia Hospitalar e Ambulatorial                                           
+2025303Suporte Profilatico e Terapeutico                                               
+2025304Vigilancia Sanitaria                                                            
+2025305Vigilancia Epidemiologica                                                       
+2025306Alimentacao e Nutricao                                                          
+2025331Protecao e Beneficios ao Trabalhador                                            
+2025332Relacoes de Trabalho                                                            
+2025333Empregabilidade                                                                 
+2025334Fomento ao Trabalho                                                             
+2025361Ensino Fundamental                                                              
+2025362Ensino Medio                                                                    
+2025363Ensino Profissional                                                             
+2025364Ensino Superior                                                                 
+2025365Educacao Infantil                                                               
+2025366Educacao de Jovens e Adultos                                                    
+2025367EDUCACAO ESPECIAL                                                               
+2025368EDUCACAO BASICA                                                                 
+2025391Patrimonio Historico, Artistico e Arqueologico                                  
+2025392Difusao Cultural                                                                
+2025421Custodia e Reintegracao Social                                                  
+2025422Direitos Individuais, Coletivos e Difusos                                       
+2025423Assistencia aos Povos Indigenas                                                 
+2025451Infra-Estrutura Urbana                                                          
+2025452Servicos Urbanos                                                                
+2025453Transportes Coletivos Urbanos                                                   
+2025481Habitacao Rural                                                                 
+2025482Habitacao Urbana                                                                
+2025511Saneamento Basico Rural                                                         
+2025512Saneamento Basico Urbano                                                        
+2025541Preservacao e Conservacao Ambiental                                             
+2025542Controle Ambiental                                                              
+2025543Recuperacao de Areas Degradadas                                                 
+2025544Recursos Hidricos                                                               
+2025545Meteorologia                                                                    
+2025571Desenvolvimento Cientifico                                                      
+2025572Desenvolvimento Tecnologico e Engenharia                                        
+2025573Difusao do Conhecimento Cientifico e Tecnologico                                
+2025605Abastecimento                                                                   
+2025606Extensao Rural                                                                  
+2025607Irrigacao                                                                       
+2025608PROMOCAO DA PRODUCAO AGROPECUARIA                                               
+2025609DEFESA AGROPECUARIA                                                             
+2025631Reforma Agraria                                                                 
+2025632Colonizacao                                                                     
+2025661Promocao Industrial                                                             
+2025662Producao Industrial                                                             
+2025663Mineracao                                                                       
+2025664Propriedade Industrial                                                          
+2025665Normalizacao e Qualidade                                                        
+2025691Promocao Comercial                                                              
+2025692Comercializacao                                                                 
+2025693Comercio Exterior                                                               
+2025694Servicos Financeiros                                                            
+2025695Turismo                                                                         
+2025721Comunicacoes Postais                                                            
+2025722Telecomunicacoes                                                                
+2025751Conservacao de Energia                                                          
+2025752Energia Eletrica                                                                
+2025753Petroleo                                                                        
+2025754Alcool                                                                          
+2025781Transporte Aereo                                                                
+2025782Transporte Rodoviario                                                           
+2025783Transporte Ferroviario                                                          
+2025784Transporte Hidroviario                                                          
+2025785TRANSPORTES ESPECIAIS                                                           
+2025811Desporto de Rendimento                                                          
+2025812Desporto Comunitario                                                            
+2025813Lazer                                                                           
+2025841Refinanciamento da Divida Interna                                               
+2025842Refinanciamento da Divida Externa                                               
+2025843Servico da Divida Interna                                                       
+2025844Servico da Divida Externa                                                       
+2025845Outras Transferencias                                                           
+2025846Outros Encargos Especiais                                                       
+2025997RESERVA DO RPPS                                                                 
+2025999RESERVA DE CONTINGENCIA                                                         
+FINALIZADOR0000000439                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

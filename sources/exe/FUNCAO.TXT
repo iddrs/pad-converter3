@@ -1,0 +1,118 @@
+87612826000190010120252802202501032025PREFEITURA MUNICIPAL INDEPENDENCIA                                              
+202201LEGISLATIVA                                                                     
+202202JUDICIARIA                                                                      
+202203ESSENCIAL A JUSTICA                                                             
+202204ADMINISTRACAO                                                                   
+202205DEFESA NACIONAL                                                                 
+202206SEGURANCA PUBLICA                                                               
+202207RELACOES EXTERIORES                                                             
+202208ASSISTENCIA SOCIAL                                                              
+202209PREVIDENCIA SOCIAL                                                              
+202210SAUDE                                                                           
+202211TRABALHO                                                                        
+202212EDUCACAO                                                                        
+202213CULTURA                                                                         
+202214DIREITOS DA CIDADANIA                                                           
+202215URBANISMO                                                                       
+202216HABITACAO                                                                       
+202217SANEAMENTO                                                                      
+202218GESTAO AMBIENTAL                                                                
+202219CIENCIA E TECNOLOGIA                                                            
+202220AGRICULTURA                                                                     
+202221ORGANIZACAO AGRARIA                                                             
+202222INDUSTRIA                                                                       
+202223COMERCIO E SERVICOS                                                             
+202224COMUNICACOES                                                                    
+202225ENERGIA                                                                         
+202226TRANSPORTE                                                                      
+202227DESPORTO E LAZER                                                                
+202228ENCARGOS ESPECIAIS                                                              
+202299RESERVA DE CONTINGENCIA                                                         
+202301LEGISLATIVA                                                                     
+202302JUDICIARIA                                                                      
+202303ESSENCIAL A JUSTICA                                                             
+202304ADMINISTRACAO                                                                   
+202305DEFESA NACIONAL                                                                 
+202306SEGURANCA PUBLICA                                                               
+202307RELACOES EXTERIORES                                                             
+202308ASSISTENCIA SOCIAL                                                              
+202309PREVIDENCIA SOCIAL                                                              
+202310SAUDE                                                                           
+202311TRABALHO                                                                        
+202312EDUCACAO                                                                        
+202313CULTURA                                                                         
+202314DIREITOS DA CIDADANIA                                                           
+202315URBANISMO                                                                       
+202316HABITACAO                                                                       
+202317SANEAMENTO                                                                      
+202318GESTAO AMBIENTAL                                                                
+202319CIENCIA E TECNOLOGIA                                                            
+202320AGRICULTURA                                                                     
+202321ORGANIZACAO AGRARIA                                                             
+202322INDUSTRIA                                                                       
+202323COMERCIO E SERVICOS                                                             
+202324COMUNICACOES                                                                    
+202325ENERGIA                                                                         
+202326TRANSPORTE                                                                      
+202327DESPORTO E LAZER                                                                
+202328ENCARGOS ESPECIAIS                                                              
+202399RESERVA DE CONTINGENCIA                                                         
+202401LEGISLATIVA                                                                     
+202402JUDICIARIA                                                                      
+202403ESSENCIAL A JUSTICA                                                             
+202404ADMINISTRACAO                                                                   
+202405DEFESA NACIONAL                                                                 
+202406SEGURANCA PUBLICA                                                               
+202407RELACOES EXTERIORES                                                             
+202408ASSISTENCIA SOCIAL                                                              
+202409PREVIDENCIA SOCIAL                                                              
+202410SAUDE                                                                           
+202411TRABALHO                                                                        
+202412EDUCACAO                                                                        
+202413CULTURA                                                                         
+202414DIREITOS DA CIDADANIA                                                           
+202415URBANISMO                                                                       
+202416HABITACAO                                                                       
+202417SANEAMENTO                                                                      
+202418GESTAO AMBIENTAL                                                                
+202419CIENCIA E TECNOLOGIA                                                            
+202420AGRICULTURA                                                                     
+202421ORGANIZACAO AGRARIA                                                             
+202422INDUSTRIA                                                                       
+202423COMERCIO E SERVICOS                                                             
+202424COMUNICACOES                                                                    
+202425ENERGIA                                                                         
+202426TRANSPORTE                                                                      
+202427DESPORTO E LAZER                                                                
+202428ENCARGOS ESPECIAIS                                                              
+202499RESERVA DE CONTINGENCIA                                                         
+202501LEGISLATIVA                                                                     
+202502JUDICIARIA                                                                      
+202503ESSENCIAL A JUSTICA                                                             
+202504ADMINISTRACAO                                                                   
+202505DEFESA NACIONAL                                                                 
+202506SEGURANCA PUBLICA                                                               
+202507RELACOES EXTERIORES                                                             
+202508ASSISTENCIA SOCIAL                                                              
+202509PREVIDENCIA SOCIAL                                                              
+202510SAUDE                                                                           
+202511TRABALHO                                                                        
+202512EDUCACAO                                                                        
+202513CULTURA                                                                         
+202514DIREITOS DA CIDADANIA                                                           
+202515URBANISMO                                                                       
+202516HABITACAO                                                                       
+202517SANEAMENTO                                                                      
+202518GESTAO AMBIENTAL                                                                
+202519CIENCIA E TECNOLOGIA                                                            
+202520AGRICULTURA                                                                     
+202521ORGANIZACAO AGRARIA                                                             
+202522INDUSTRIA                                                                       
+202523COMERCIO E SERVICOS                                                             
+202524COMUNICACOES                                                                    
+202525ENERGIA                                                                         
+202526TRANSPORTE                                                                      
+202527DESPORTO E LAZER                                                                
+202528ENCARGOS ESPECIAIS                                                              
+202599RESERVA DE CONTINGENCIA                                                         
+FINALIZADOR0000000116                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

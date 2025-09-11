@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="bal_desp">
+    <columns>
+        <col origin="source" id="orgao" len="2" start="1" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="3" type="int" transformer=""></col>
+        <col origin="source" id="funcao" len="2" start="5" type="int" transformer=""></col>
+        <col origin="source" id="subfuncao" len="3" start="7" type="int" transformer=""></col>
+        <col origin="source" id="programa" len="4" start="10" type="int" transformer=""></col>
+        <col origin="source" id="projativ" len="5" start="17" type="int" transformer=""></col>
+        <col origin="source" id="elemento" len="6" start="22" type="string" transformer="elemento_fmt"></col>
+        <col origin="source" id="dotacao_inicial" len="13" start="32" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="atualizacao_monetaria" len="13" start="45" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="credito_suplementar" len="13" start="58" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="credito_especial" len="13" start="71" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="credito_extraordinario" len="13" start="84" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="reducao_dotacao" len="13" start="97" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_empenhado" len="13" start="136" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_liquidado" len="13" start="149" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_pago" len="13" start="162" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_limitado" len="13" start="175" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="valor_recomposto" len="13" start="188" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="transferencia" len="13" start="218" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="transposicao" len="13" start="231" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="remanejamento" len="13" start="244" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="257" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="258" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+        <col origin="calc" id="dotacao_atualizada" type="currency" fn="dotacao_atualizada"></col>
+        <col origin="calc" id="dotacao_disponivel" type="currency" fn="dotacao_disponivel"></col>
+        <col origin="calc" id="saldo_a_empenhar" type="currency" fn="saldo_a_empenhar"></col>
+        <col origin="calc" id="saldo_disponivel" type="currency" fn="saldo_disponivel"></col>
+        <col origin="calc" id="empenhado_a_liquidar" type="currency" fn="empenhado_a_liquidar"></col>
+        <col origin="calc" id="liquidado_a_pagar" type="currency" fn="liquidado_a_pagar"></col>
+        <col origin="calc" id="empenhado_a_pagar" type="currency" fn="empenhado_a_pagar"></col>
+    </columns>
+</layout>
+
