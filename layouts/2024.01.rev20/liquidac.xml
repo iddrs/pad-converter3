@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="liquidac">
+    <columns>
+        <col origin="source" id="chave_empenho" len="13" start="1" type="string" transformer=""></col>
+        <col origin="source" id="ano_empenho" len="5" start="1" type="int" transformer=""></col>
+        <col origin="source" id="entidade_empenho" len="2" start="6" type="int" transformer=""></col>
+        <col origin="source" id="nr_empenho" len="6" start="8" type="int" transformer=""></col>
+        <col origin="source" id="nr_liquidacao" len="20" start="14" type="int" transformer=""></col>
+        <col origin="source" id="data_liquidacao" len="8" start="34" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_liquidacao" len="14" start="42" type="currency" transformer="currency_post_signal_fmt"></col>
+        <col origin="source" id="codigo_operacao" len="30" start="221" type="string" transformer="trim"></col>
+        <col origin="source" id="historico_liquidacao" len="400" start="251" type="string" transformer="trim"></col>
+        <col origin="source" id="existe_contrato" len="1" start="651" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="nr_contrato_tce" len="20" start="652" type="int" transformer=""></col>
+        <col origin="source" id="nr_contrato" len="20" start="672" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="ano_contrato" len="4" start="692" type="int" transformer=""></col>
+        <col origin="source" id="existe_nota_fiscal" len="1" start="696" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="nr_nota_fiscal" len="9" start="697" type="int" transformer=""></col>
+        <col origin="source" id="serie_nota_fiscal" len="3" start="706" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="tipo_instrumento_contratual" len="1" start="709" type="char" transformer="strtoupper"></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

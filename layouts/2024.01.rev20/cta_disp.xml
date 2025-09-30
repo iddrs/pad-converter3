@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="cta_disp">
+    <columns>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="cc_fmt"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="banco" len="5" start="29" type="int" transformer=""></col>
+        <col origin="source" id="agencia" len="5" start="34" type="string" transformer="trim"></col>
+        <col origin="source" id="conta_corrente" len="20" start="39" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_conta_corrente" len="1" start="59" type="int" transformer=""></col>
+        <col origin="source" id="classificacao_conta_corrente" len="1" start="60" type="int" transformer=""></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="65" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="66" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="69" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

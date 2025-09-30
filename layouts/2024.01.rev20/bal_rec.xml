@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="bal_rec">
+    <columns>
+        <col origin="source" id="codigo_receita" len="20" start="1" type="string" transformer="nro_fmt"></col>
+        <col origin="calc" id="natureza_receita" type="string" fn="natureza_receita"></col>
+        <col origin="calc" id="categoria_receita" type="string" fn="categoria_receita"></col>
+        <col origin="calc" id="tipo_receita" type="int" fn="tipo_receita"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="receita_orcada" len="13" start="25" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="receita_realizada" len="13" start="38" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="especificacao_receita" len="170" start="55" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_nivel_receita" len="1" start="225" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="nivel_receita" len="2" start="226" type="int" transformer=""></col>
+        <col origin="source" id="caracteristica_peculiar_receita" len="3" start="228" type="int" transformer=""></col>
+        <col origin="source" id="previsao_atualizada" len="13" start="231" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="248" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="249" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="252" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+        <col origin="calc" id="a_arrecadar_atualizado" type="currency" fn="a_arrecadar_atualizado"></col>
+        <col origin="calc" id="a_arrecadar_orcado" type="currency" fn="a_arrecadar_orcado"></col>
+    </columns>
+</layout>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="tce_4111">
+    <columns>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="cc_fmt"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="nr_lancamento" len="12" start="29" type="int" transformer=""></col>
+        <col origin="source" id="nr_lote" len="12" start="41" type="int" transformer=""></col>
+        <col origin="source" id="nr_documento" len="13" start="53" type="int" transformer=""></col>
+        <col origin="source" id="data_lancamento" len="8" start="66" type="date" transformer="date_fmt"></col>
+        <col origin="source" id="valor_lancamento" len="17" start="74" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="tipo_lancamento" len="1" start="91" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="nr_arquivamento" len="12" start="92" type="int" transformer=""></col>
+        <col origin="source" id="historico_lancamento" len="150" start="104" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_documento" len="1" start="254" type="int" transformer=""></col>
+        <col origin="source" id="natureza_informacao" len="1" start="255" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="indicador_superavit_financeiro" len="1" start="256" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="265" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="266" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="269" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+    </columns>
+</layout>
+

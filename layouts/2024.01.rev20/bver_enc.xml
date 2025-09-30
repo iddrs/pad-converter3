@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="bver_enc">
+    <columns>
+        <col origin="source" id="conta_contabil" len="20" start="1" type="string" transformer="cc_fmt"></col>
+        <col origin="source" id="orgao" len="2" start="21" type="int" transformer=""></col>
+        <col origin="source" id="uniorcam" len="2" start="23" type="int" transformer=""></col>
+        <col origin="source" id="saldo_inicial_devedor" len="13" start="25" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="saldo_inicial_credor" len="13" start="38" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="movimento_devedor" len="13" start="51" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="movimento_credor" len="13" start="64" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="saldo_atual_devedor" len="13" start="77" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="saldo_atual_credor" len="13" start="90" type="currency" transformer="currency_fmt"></col>
+        <col origin="source" id="especificacao_conta_contabil" len="148" start="103" type="string" transformer="trim"></col>
+        <col origin="source" id="tipo_nivel_conta_contabil" len="1" start="251" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="nivel_conta_contabil" len="2" start="252" type="int" transformer=""></col>
+        <col origin="source" id="escrituracao" len="1" start="255" type="string" transformer="strtoupper"></col>
+        <col origin="source" id="natureza_informacao" len="1" start="256" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="indicador_superavit_financeiro" len="1" start="257" type="char" transformer="strtoupper"></col>
+        <col origin="source" id="indicador_exercicio_fonte_recurso" len="1" start="266" type="int" transformer=""></col>
+        <col origin="source" id="fonte_recurso" len="3" start="267" type="int" transformer=""></col>
+        <col origin="source" id="codigo_acompanhamento_orcamentario" len="4" start="270" type="int" transformer=""></col>
+        <col origin="header" id="cnpj" type="string" prop="cnpj"></col>
+        <col origin="header" id="data_inicial" type="date" prop="dataInicial"></col>
+        <col origin="header" id="data_final" type="date" prop="dataFinal"></col>
+        <col origin="header" id="data_geracao" type="date" prop="dataGeracao"></col>
+        <col origin="calc" id="entidade" type="string" fn="detect_entidade"></col>
+        <col origin="calc" id="remessa" type="int" fn="remessa"></col>
+        <col origin="calc" id="saldo_inicial" type="currency" fn="saldo_inicial"></col>
+        <col origin="calc" id="saldo_atual" type="currency" fn="saldo_atual"></col>
+    </columns>
+</layout>
+
